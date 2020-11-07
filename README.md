@@ -1,5 +1,2 @@
 # TylerSilverman.github.io
-Github Page
-
-This is an updated portfolio. It has a few pictures of my 
-C:\Users\Silve\UCF\PartTime\Local\Github-Activity-Pages\TylerSilverman.github.io\asset\resume.PNG 
+![resume](https://user-images.githubusercontent.com/70153419/98447647-80350700-20f4-11eb-927b-e2d376c3c3bd.PNG)
