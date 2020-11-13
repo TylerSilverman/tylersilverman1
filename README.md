@@ -2,7 +2,7 @@
 
 * [Description](#description): 
 * [About Me](#aboutMe):
-* [Connection](#connection):
+* [Contributors](#contributors):
 * [Acheievements](#achievements):
 * [Websites](#Websites):
 * [Questions](#questions):
@@ -11,11 +11,13 @@
 This is my personal website. 
 
 ## About Me
+Learning the front /back end of coding, and applying the skills I have learned
 
-## Connection 
-Who Contributed to the readMe generator: 
+## Contributors
+Tyler Silverman, sole contributor
 
 ## Achievements
+Please view on the Achievement Tab. 
 
 ## Websites
 Silverman LLC: https://silvermanllc.com
@@ -29,8 +31,6 @@ Resume https://user-images.githubusercontent.com/70153419/98447647-80350700-20f4
 
 ## Questions
 * If you have questions, please visit my [Github](https://github.com/TylerSilverman) 
-<<<<<<< HEAD
-* Email: (silverman.tyler@gmail.com)
 =======
-* Email: (silverman.tyler@gmail.com)
->>>>>>> 37619a353437671df17b357c7039d047b7541df1
+* Email: [Email](silverman.tyler@gmail.com)
+
