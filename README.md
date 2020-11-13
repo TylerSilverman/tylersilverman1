@@ -20,17 +20,17 @@ Tyler Silverman, sole contributor
 Please view on the Achievement Tab. 
 
 ## Websites
-Silverman LLC: https://silvermanllc.com
+[Silverman LLC:] (https://silvermanllc.com)
 <br>
-Silverman All Around: https://silvermanallaround.com
+[Silverman All Around:] (https://silvermanallaround.com)
 <br>
-Github https://www.github.io/tylersilverman
+[Github] (https://www.github.io/tylersilverman)
 <br>
-Resume https://user-images.githubusercontent.com/70153419/98447647-80350700-20f4-11eb-927b-e2d376c3c3bd.PNG
+[Resume] (https://user-images.githubusercontent.com/70153419/98447647-80350700-20f4-11eb-927b-e2d376c3c3bd.PNG)
 <br>
 
 ## Questions
 * If you have questions, please visit my [Github](https://github.com/TylerSilverman) 
-=======
+<br>
 * Email: [Email](silverman.tyler@gmail.com)
 
