@@ -29,4 +29,8 @@ Resume https://user-images.githubusercontent.com/70153419/98447647-80350700-20f4
 
 ## Questions
 * If you have questions, please visit my [Github](https://github.com/TylerSilverman) 
+<<<<<<< HEAD
 * Email: (silverman.tyler@gmail.com)
+=======
+* Email: (silverman.tyler@gmail.com)
+>>>>>>> 37619a353437671df17b357c7039d047b7541df1
