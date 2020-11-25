@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MainPoint</title>
+    <title>Tyler Silverman</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   <link
     rel="stylesheet"
@@ -16,46 +16,55 @@
     rel="stylesheet"
   />
   <link rel="stylesheet" href="style.css" />
-  </head>
-  </body>
- <br><br><br><br><br><br>
- <div class="card text-center">
-  <div class="card-header">
-    Tyler Silverman
-  </div>
-  <div class="card-body">
-    <!-- <h5 class="card-title">Tyler Silverman</h5> -->
-    <!-- <p class="card-text">Welcome</p> -->
-    <a href="index.html" class="btn btn-primary">Click to Enter</a>
-    <a href="index.html" class="btn btn-warning">Return Back</a>
-  </div>
-  <div class="card-footer text-muted">
-    <div id="date"></div>
-  </div>
+</head>
+<body>
+  <!-- Nav Bar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="main.html">Tyler Silverman</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" href="main.html"><strong>Home Page<span class="sr-only">(current)</span></strong></a> 
+          <a class="nav-link" href="AboutMe.html">About Me</a>
+          <a class="nav-link" href="Connections.html">Connections</a>
+          <a class="nav-link" href="Achievements.html">Achievements</a>
+          <!-- <a class="nav-link" href="#"></a>
+          <a class="nav-link" href="#"></a> -->
+        </div>
+    </div>
+  </nav>
+<!-- Page Contact -->
+<div class="jumbotron text-center">
+  <p id="currentDay" class="lead"></p>
+  <p><strong>Welcome to my portfolio. Please Scroll through the navbar to find my Achievements, About Me, and ways to Network.</strong></p>
+  <p class="lead"></p>
+  <hr class="my-8">
+  <div id="date"></div>
+  <!-- <a class="btn btn-primary btn-lg" href="AboutMe.html" role="button">Just a Tip Away</a> -->
 </div>
+<section>
+  <div class="indexImg">
+    <img src="tyga.jpg" class="rounded float-left" alt="Welcome Photo3">
+    <img src="hotpot.jpg" class="rounded float-right" alt="Welcome Photo3">
+    <img src="North Carolina.jpg" class="rounded mx-auto d-block" alt="Welcome Photo3">
+  </div>
+  </section>   
+   
+  <nav class="navbar fixed-bottom navbar-light bg-light">
+    <a class="navbar-brand" href="main.html"><h6>Home Page</h6></a>
+  </nav>
 
-
-
-
-
-
-
-
-
-  
-
-
-
-  <!-- !-- Javasript -->
+<!-- Javasript -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
   <script src="index.js" type="text/javascript"></script>
   <script type= "text/javascript">
-</script>
-
-
-
+  console.log("Welcome World");
+  console.log("The contact page does not work, but feel free to call or text me.");
+  </script>
 </body>
 </html>
