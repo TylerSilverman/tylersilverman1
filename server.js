@@ -2,6 +2,8 @@
 //npm init
 //npm install express
 //npm install chalk
+//npm i stopwatch
+//npm i nes
 
 const express = require('express');
 const app = express();
@@ -10,7 +12,29 @@ const PORT = process.env.PORT || 4579;
 
 //npm install chalk - this allows writing in the terminal 
 const chalk = require('chalk');
-console.log(chalk.green('Hello This is My Portfolio!'));
+console.log(chalk.green('This is My Portfolio!'));
+
+// var Stopwatch = require('stopwatch').Stopwatch;
+ 
+// var stopwatch = new Stopwatch(1, { seconds: 60 });
+// stopwatch.on('tick', function(secondsLeft) {
+//   //when one second pass.
+// });
+// stopwatch.on('end', function() {
+//   //when the time ends
+// });
+
+//shows a timer in the console terminal 
+// const Timer = require('tiny-timer')
+ 
+// const timer = new Timer()
+ 
+// timer.on('tick', (ms) => console.log('Going Down', ms))
+// timer.on('done', () => console.log('Complete!'))
+// timer.on('statusChanged', (status) => console.log('status:', status))
+ 
+// timer.start(15000) // run for 5 seconds
+
 
 //ALL APP.USE (3)
 
@@ -23,18 +47,20 @@ app.use(express.urlencoded({extended: true})); //using the app to express acess 
 
 //ALL APP.GET (4)
 
-// app.get("/", function (req, res){
-//   res.sendFile(path.join(__dirname, "public/assets/js/index.js"));
-// }); // express reaching out to the index.js to send a file after the response 
-
 //app.get for the notes.html from the public folder
 app.get("/dashboard", function (req, res){
   res.sendFile(path.join(__dirname, "public/dashboard.html"))
-}); // ROUTES interact with public notes html database:
+}); 
 
+//app.get for the notes.html from the public folder
+app.get("/achievements", function (req, res){
+  res.sendFile(path.join(__dirname, "public/achievements.html"))
+}); 
 
-
-
+//app.get for the notes.html from the public folder
+app.get("/connections", function (req, res){
+  res.sendFile(path.join(__dirname, "public/connections.html"))
+}); 
 
  //APP CALLING THE LISTENING FUNCTION TO THE LOCAL HOST
 

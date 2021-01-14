@@ -1,14 +1,14 @@
+## Click below view my portfolio
+[Portfolio](#https://tylersilverman.herokuapp.com/)
+
 ## Table of Contents: 
 
 * [Description](#description): 
-* [About Me](#aboutMe):
 * [Contributors](#contributors):
 * [Acheievements](#achievements):
 * [Websites](#Websites):
 * [Questions](#questions):
-
-## Description
-This is my personal website. 
+ 
 
 ## About Me
 Learning the front /back end of coding, and applying the skills I have learned

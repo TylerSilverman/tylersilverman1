@@ -19,6 +19,9 @@
   "homepage": "https://github.com/TylerSilverman/TylerSilverman.github.io#readme",
   "dependencies": {
     "chalk": "^4.1.0",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "nes": "^10.0.2",
+    "stopwatch": "^0.2.0",
+    "tiny-timer": "^1.5.1"
   }
 }
