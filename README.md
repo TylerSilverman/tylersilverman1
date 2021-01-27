@@ -1,5 +1,5 @@
 ## Click below view my portfolio
-https://tylersilverman.herokuapp.com/
+[Portfolio](https://tylersilverman.herokuapp.com/)
 
 ## About Me
 Learning the front /back end of coding, and applying the skills I have learned
