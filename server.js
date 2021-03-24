@@ -1,69 +1,56 @@
-//heroku login 
-//npm init
-//npm install express
-//npm install chalk
-//npm i stopwatch
-//npm i nes
+require('dotenv').config();
 
-const express = require('express');
-const app = express();
 const path = require('path');
-const PORT = process.env.PORT || 4579;
+const express = require('express');
+const mongoose = require('mongoose');
+const passport = require('passport');
+// Middleware packages
+const bodyParser = require('body-parser');
+// Routes
+const authRoutes = require('./routes/auth');
+const usersRoutes = require('./routes/users');
 
-//npm install chalk - this allows writing in the terminal 
-const chalk = require('chalk');
-console.log(chalk.green('This is My Most Up to Date Portfolio!, click below to view'));
+const PORT = process.env.PORT || 3001;
 
-// var Stopwatch = require('stopwatch').Stopwatch;
- 
-// var stopwatch = new Stopwatch(1, { seconds: 60 });
-// stopwatch.on('tick', function(secondsLeft) {
-//   //when one second pass.
-// });
-// stopwatch.on('end', function() {
-//   //when the time ends
-// });
+const app = express();
 
-//shows a timer in the console terminal 
-// const Timer = require('tiny-timer')
- 
-// const timer = new Timer()
- 
-// timer.on('tick', (ms) => console.log('Going Down', ms))
-// timer.on('done', () => console.log('Complete!'))
-// timer.on('statusChanged', (status) => console.log('status:', status))
- 
-// timer.start(15000) // run for 5 seconds
+// Middleware packages
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
 
+// Mongoose connection to MongoDB. (https://mongoosejs.com/docs/guide.html)
+mongoose.connect(
+  process.env.MONGODB_URI || `mongodb://localhost:27017/${process.env.MONGODB_DATABASE}`,
+  {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  },
+)
+.then(() => console.log('MongoDB connected'))
+.catch((err) => console.log(err));
 
-//ALL APP.USE (3)
+// Passport JWT setup.
+app.use(passport.initialize());
+require('./config/passport')(passport);
 
-//the app.use is setting up the function for express to handle the data parsing. 
-app.use(express.json()); //function to call the inforamtion to the body req. 
+// Middleware to use when routes require authenticated user.
+const requiresAuth = passport.authenticate('jwt', { session: false });
 
-app.use(express.static(path.join(__dirname, "public"))); //using express.static and app.use to pull all the files from the public folder to use mostly from the css styling. 
+// Login and register routes here don't require authenticated user.
+app.use('/api/auth', authRoutes);
 
-app.use(express.urlencoded({extended: true})); //using the app to express acess to the body requirements (req) function 
+// For all authenticated routes, make sure to use this
+app.use('/api/users', requiresAuth, usersRoutes);
 
-//ALL APP.GET (4)
+// For production, serve compiled React app in client build directory.
+if (process.env.NODE_ENV === 'production') {
+  app.use(express.static('client/build'));
 
-//app.get for the notes.html from the public folder
-app.get("/dashboard", function (req, res){
-  res.sendFile(path.join(__dirname, "public/dashboard.html"))
-}); 
+  app.get('*', (req, res) => {
+    res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
+  });
+}
 
-//app.get for the notes.html from the public folder
-app.get("/achievements", function (req, res){
-  res.sendFile(path.join(__dirname, "public/achievements.html"))
-}); 
-
-//app.get for the notes.html from the public folder
-app.get("/connections", function (req, res){
-  res.sendFile(path.join(__dirname, "public/connections.html"))
-}); 
-
- //APP CALLING THE LISTENING FUNCTION TO THE LOCAL HOST
-
-app.listen(PORT, function () {
-  console.log("Click To Check Out: http://localhost:" + PORT);
-}); //starts the server to begin to listen to the PORT  and then will console log 
+app.listen(PORT, () => {
+  console.log(`Server is listening at http://localhost:${PORT}`);
+});
