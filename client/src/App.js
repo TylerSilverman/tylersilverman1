@@ -6,7 +6,6 @@ import { setCurrentUser, logoutUser } from './store/actions/authActions';
 import { Store } from './store';
 
 import './App.css';
-
 import Navbar from './components/partials/Navbar';
 import Footer from './components/partials/Footer';
 import Landing from './components/pages/Landing';
@@ -14,6 +13,7 @@ import Register from './components/pages/Register';
 import Login from './components/pages/Login';
 import PrivateRoute from './components/auth/PrivateRoute';
 import Dashboard from './components/pages/Dashboard';
+import Portfolio from './components/pages/Portfolio';
 
 const App = () => {
   const { dispatch } = useContext(Store);
@@ -44,9 +44,10 @@ const App = () => {
         <Route exact path="/login" component={Login} />
         <Switch>
           <PrivateRoute exact path="/dashboard" component={Dashboard} />
+          <PrivateRoute exact path="/portfolio" component={Portfolio} />
         </Switch>
+        <Footer />
       </div>
-      <Footer/>
     </Router>
   );
 };

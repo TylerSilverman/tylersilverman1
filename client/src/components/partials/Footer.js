@@ -1,32 +1,30 @@
-// import React from 'react';
+import React from "react";
+import { AppBar, Toolbar, Typography } from "@material-ui/core";
+import { makeStyles } from "@material-ui/core/styles";
 
-// const Footer = props => {
-//   const year = new Date().getFullYear();
-
-//   return (
-//     <div>
-//       <p>&copy; {year} Tyler Silverman</p>
-//     </div>
-//   );
-// };
-
-// export default Footer;
-
-import React from 'react';
-import { Link } from 'react-router-dom';
-
-const Footer = props => {
+const useStyles = makeStyles((theme) => ({
+  appBar: {
+    top: "auto",
+    bottom: 0,
+    background: "darkgreen",
+    height: "30px",
+    justifyContent: "center",
+    alignItems: "center",
+  },
+}));
+const Footer = (props) => {
   const year = new Date().getFullYear();
+
+  const classes = useStyles();
+
   return (
-    <div className="navbar-fixed">
-      <nav className="z-depth-0">
-        <div className="nav-wrapper white">
-          <Link to="/" className="col s4 brand-logo center black-text" style={{ fontFamily: 'monospace' }}>
-          <p>&copy; {year}</p>
-          </Link>
-        </div>
-      </nav>
-    </div>
+    <AppBar position="fixed" className={classes.appBar}>
+      <Toolbar>
+        <Typography variant="body2" align="center">
+          &copy; {year} Tyler Silverman
+        </Typography>
+      </Toolbar>
+    </AppBar>
   );
 };
 

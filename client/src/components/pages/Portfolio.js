@@ -1,9 +1,13 @@
-import React, { useEffect, useContext } from 'react';
+import React from 'react';
 
 const Portfolio = props => {
 
   return (
-      <div><h4>Hello</h4></div>
+    <div>
+      <h4>
+        Insert Resume PDF image of resume here
+        </h4>
+    </div>
     // <div className="container valign-wrapper" style={{ height: '75vh' }}>
     //   <div className="row">
     //     <div className="col s12 center-align">

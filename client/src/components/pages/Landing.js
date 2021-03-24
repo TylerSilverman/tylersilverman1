@@ -8,18 +8,15 @@ const Landing = props => {
   console.log({ state, props });
 
   return (
-    <div className="container valign-wrapper" style={{ height: '75vh' }}>
+    <div className="container valign-wrapper" style={{ height: '80vh' }}>
       <div className="row">
         <div className="col s12 center-align">
           <h4>
-            <b>Welcome</b> Please Login or Register {' '}
+            <b>Welcome</b>{' '}
           </h4>
-          <p className="flow-text grey-text text-darken-1">
-            To View Portfolio
-          </p>
           <br />
           <div className="col s4">
-            <Link to="/register" className="btn btn-large waves-effect waves-light hoverable  accent-3" style={{
+            <Link to="/register" className="btn btn-small waves-effect waves-light hoverable  accent-3" style={{
               width: '140px',
               borderRadius: '3px',
               letterSpacing: '1.5px',
@@ -28,7 +25,7 @@ const Landing = props => {
             </Link>
           </div>
           <div className="col s4">
-            <Link to="/login" className="btn btn-large btn-flat waves-effect white black-text" style={{
+            <Link to="/login" className="btn btn-small waves-effect waves-light hoverable  accent-4" style={{
               width: '140px',
               borderRadius: '3px',
               letterSpacing: '1.5px',
@@ -37,12 +34,12 @@ const Landing = props => {
             </Link>
           </div>
           <div className="col s4">
-            <Link to="/portfolio" className="btn btn-large btn-flat waves-effect white black-text" style={{
+            <Link to="/portfolio" className="btn btn-small waves-effect waves-light hoverable  accent-3" style={{
               width: '140px',
               borderRadius: '3px',
               letterSpacing: '1.5px',
             }}>
-              Portfolio
+              Resume
             </Link>
           </div>
         </div>

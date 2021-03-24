@@ -24,29 +24,34 @@ const Dashboard = props => {
   };
 
   return (
-    <div className="container valign-wrapper" style={{ height: '75vh' }}>
+    <div className="container valign-wrapper" style={{ height: 'auto' }}>
       <div className="row">
         <div className="col s12 center-align">
           <h4>
-            <b>Hey there,</b> {user.name.split(' ')[0]}
+            <b>Welcome to my Personal Application,</b> {user.name.split(' ')[0]}
+            <br></br>
+            <br></br>
+            <br></br>
+            <b>Below you can navigate throughout the site</b>
+            <br></br>
+            <br></br>
+            <br></br>
             <p className="flow-text grey-text text-darken-1">
-              You are now logged into the dashboard{' '}
+              Contact Information{' '}
+            </p>
+            <p className="flow-text grey-text text-darken-1">
+              Acheivements{' '}
+            </p>
+            <p className="flow-text grey-text text-darken-1">
+              Resume{' '}
+            </p>
+            <p className="flow-text grey-text text-darken-1">
+              Silverman All Around{' '}
+            </p>
+            <p className="flow-text grey-text text-darken-1">
+              Romote{' '}
             </p>
           </h4>
-
-          <button
-            className="btn btn-large waves-effect waves-light hoverable blue accent-3"
-            style={
-              {
-                width: '150px',
-                borderRadius: '3px',
-                letterSpacing: '1.5px',
-                marginTop: '1rem',
-              }
-            }
-            onClick={onLogoutClick}>
-            Logout
-          </button>
         </div>
       </div>
     </div>
