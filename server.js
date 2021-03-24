@@ -12,7 +12,7 @@ const PORT = process.env.PORT || 4579;
 
 //npm install chalk - this allows writing in the terminal 
 const chalk = require('chalk');
-console.log(chalk.green('This is My Portfolio!'));
+console.log(chalk.green('This is My Most Up to Date Portfolio!, click below to view'));
 
 // var Stopwatch = require('stopwatch').Stopwatch;
  
