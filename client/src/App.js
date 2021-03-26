@@ -6,6 +6,7 @@ import { setCurrentUser, logoutUser } from './store/actions/authActions';
 import { Store } from './store';
 
 import './App.css';
+import Footer from './components/partials/Footer';
 
 import Navbar from './components/partials/Navbar';
 import Landing from './components/pages/Landing';
@@ -55,7 +56,7 @@ const App = () => {
           <PrivateRoute exact path="/about" component={About}/>
 
         </Switch>
-      
+      <Footer/>
       </div>
     </Router>
   );

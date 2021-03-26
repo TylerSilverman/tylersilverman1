@@ -33,6 +33,9 @@ const Dashboard = props => {
                <span style={{ fontFamily: 'monospace' }}>You are at the Dashboard{' '}</span> 
             </p>
           </h4>
+          {/* <div class="card-body">
+          <a href="www.silvermanallaround.com">Click to Download resume</a>
+        </div> */}
 
         </div>
       </div>

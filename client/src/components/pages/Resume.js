@@ -17,24 +17,27 @@ const Resume = props => {
     .catch(err => console.log({ err }));
   }, [ state, props ]);
 
-  const onLogoutClick = e => {
-    e.preventDefault();
+  // const onLogoutClick = e => {
+  //   e.preventDefault();
 
-    logoutUser(props.history)(dispatch);
-  };
+  //   logoutUser(props.history)(dispatch);
+  // };
 
   return (
-    <div className="container valign-wrapper" style={{ height: 'auto' }}>
+    <div className="container valign-wrapper" style={{ height: '75vh' }}>
       <div className="row">
         <div className="col s12 center-align">
           <h4>
-            <b>Hey, {'  '}</b> {user.name.split(' ')[0]}
-            {/* <p>Click to Download resume</p> */}
-          </h4>
-        <div class="card-body">
+            <b>Hey there,</b> {user.name.split(' ')[0]}
+            <p className="flow-text grey-text text-darken-1">
+               <span style={{ fontFamily: 'monospace' }}>Resume Below{' '}</span> 
+            </p>
+            <div class="card-body">
           <a href="https://github.com/TylerSilverman/TylerSilverman.github.io/files/6212765/Resume-Tyler.Silverman.pdf"
             class="btn btn-link">Click to Download resume</a>
         </div>
+          </h4>
+
         </div>
       </div>
     </div>

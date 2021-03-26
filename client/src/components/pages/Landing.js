@@ -8,18 +8,17 @@ const Landing = props => {
   console.log({ state, props });
 
   return (
-    <div className="container valign-wrapper" style={{ height: '75vh' }}>
+    <div className="container valign-wrapper" background="gray">
       <div className="row">
         <div className="col s12 center-align">
-          <h4>
+          <h2>
             <b>Welcome</b> 
-            </h4>
-            <h6>Please login or Create an Account {' '}</h6>
+            </h2>
+            <h6> {' '}</h6>
           <br></br>
           <a href="https://github.com/TylerSilverman/TylerSilverman.github.io/files/6212765/Resume-Tyler.Silverman.pdf">Download Resume</a>
           <br />
           <br></br>
-          
           <div className="col s6">
             <Link to="/register" className="btn btn-large waves-light hoverable blue accent-3" style={{
               width: '140px',

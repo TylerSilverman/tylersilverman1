@@ -4,30 +4,48 @@ import { logoutUser } from "../../store/actions/authActions";
 import { Store } from "../../store";
 import {
   Button,
+  header,
+  Toolbar,
+  
+
 } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles(() => ({
- 
-  //changes the design on navbar links
+  header: {
+    backgroundColor: "white",
+    paddingRight: "79px",
+    paddingLeft: "118px",
+    "@media (max-width: 900px)": {
+      paddingLeft: 0,
+    },
+  },
+  toolbar: {
+    display: "flex",
+    justifyContent: "space-between",
+  },
   menuButton: {
-    color: "#3266A1",
-    fontWeight: 700,
-    size: "22px",
+    color: "#3266A7",
+    fontWeight: 800,
+    size: "18px",
     marginLeft: "38px",
+  },
+  drawerContainer: {
+    padding: "20px 30px",
   },
 }));
 
 const Navbar = (props) => {
-  const { menuButton } = useStyles();
+  const { header, menuButton, toolbar, drawerContainer } = useStyles();
 
   const history = useHistory();
   const { state, dispatch } = useContext(Store);
-  const [mobileView, setStateMobile] = useState({
+  
+  const [stateMobile, setStateMobile] = useState({
     mobileView: false,
     drawerOpen: false,
   });
-
+  const { mobileView, drawerOpen } = stateMobile;
   // const { mobileView } = stateMobile;
 
   useEffect(() => {
@@ -63,15 +81,15 @@ const Navbar = (props) => {
         ) : (
           " "
         )}
-        {state.auth.isAuthenticated ? (
+        {/* {state.auth.isAuthenticated ? (
           <Button to="/achievements
           " component={NavLink} className={menuButton}>
             Achievements
           </Button>
         ) : (
           " "
-        )}
-        {state.auth.isAuthenticated ? (
+        )} */}
+        {/* {state.auth.isAuthenticated ? (
           <Button to="/search
           " component={NavLink} className={menuButton}>
             Search
@@ -94,7 +112,7 @@ const Navbar = (props) => {
           </Button>
         ) : (
           " "
-        )}
+        )} */}
         
         {state.auth.isAuthenticated ? (
           <Button
