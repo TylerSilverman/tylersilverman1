@@ -4,7 +4,7 @@ import { logoutUser } from '../../store/actions/authActions';
 
 import API from '../../utils/apiHelper';
 
-const Dashboard = props => {
+const Achievements = props => {
   const { state, dispatch } = useContext(Store);
   const user = state.auth.user;
 
@@ -17,11 +17,11 @@ const Dashboard = props => {
     .catch(err => console.log({ err }));
   }, [ state, props ]);
 
-  // const onLogoutClick = e => {
-  //   e.preventDefault();
+  const onLogoutClick = e => {
+    e.preventDefault();
 
-  //   logoutUser(props.history)(dispatch);
-  // };
+    logoutUser(props.history)(dispatch);
+  };
 
   return (
     <div className="container valign-wrapper" style={{ height: '75vh' }}>
@@ -30,14 +30,13 @@ const Dashboard = props => {
           <h4>
             <b>Hey there,</b> {user.name.split(' ')[0]}
             <p className="flow-text grey-text text-darken-1">
-               <span style={{ fontFamily: 'monospace' }}>You are at the Dashboard{' '}</span> 
+               <span style={{ fontFamily: 'monospace' }}>You are at the Achievements{' '}</span> 
             </p>
           </h4>
-
         </div>
       </div>
     </div>
   );
 };
 
-export default Dashboard;
+export default Achievements;

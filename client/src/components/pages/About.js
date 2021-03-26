@@ -4,7 +4,7 @@ import { logoutUser } from '../../store/actions/authActions';
 
 import API from '../../utils/apiHelper';
 
-const Dashboard = props => {
+const About = props => {
   const { state, dispatch } = useContext(Store);
   const user = state.auth.user;
 
@@ -30,14 +30,13 @@ const Dashboard = props => {
           <h4>
             <b>Hey there,</b> {user.name.split(' ')[0]}
             <p className="flow-text grey-text text-darken-1">
-               <span style={{ fontFamily: 'monospace' }}>You are at the Dashboard{' '}</span> 
+               <span style={{ fontFamily: 'monospace' }}>Its About Me{' '}</span> 
             </p>
           </h4>
-
         </div>
       </div>
     </div>
   );
 };
 
-export default Dashboard;
+export default About;

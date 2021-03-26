@@ -3,51 +3,32 @@ import { NavLink, useHistory } from "react-router-dom";
 import { logoutUser } from "../../store/actions/authActions";
 import { Store } from "../../store";
 import {
-  AppBar,
-  Toolbar,
-  IconButton,
-  Drawer,
-  MenuItem,
   Button,
 } from "@material-ui/core";
-import MenuIcon from "@material-ui/icons/Menu";
 import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles(() => ({
-  header: {
-    backgroundColor: "white",
-    paddingRight: "79px",
-    paddingLeft: "118px",
-    "@media (max-width: 900px)": {
-      paddingLeft: 0,
-    },
-  },
-  toolbar: {
-    display: "flex",
-    justifyContent: "space-between",
-  },
+ 
+  //changes the design on navbar links
   menuButton: {
     color: "#3266A1",
     fontWeight: 700,
-    size: "18px",
+    size: "22px",
     marginLeft: "38px",
-  },
-  drawerContainer: {
-    padding: "20px 30px",
   },
 }));
 
 const Navbar = (props) => {
-  const { header, menuButton, toolbar, drawerContainer } = useStyles();
+  const { menuButton } = useStyles();
 
   const history = useHistory();
   const { state, dispatch } = useContext(Store);
-  const [stateMobile, setStateMobile] = useState({
+  const [mobileView, setStateMobile] = useState({
     mobileView: false,
     drawerOpen: false,
   });
 
-  const { mobileView, drawerOpen } = stateMobile;
+  // const { mobileView } = stateMobile;
 
   useEffect(() => {
     const setResponsiveness = () => {
@@ -65,7 +46,6 @@ const Navbar = (props) => {
     logoutUser(history)(dispatch);
   };
 
-  const getMenuButtons = () => {
     return (
       <div>
         {" "}
@@ -77,12 +57,45 @@ const Navbar = (props) => {
           " "
         )}{" "}
         {state.auth.isAuthenticated ? (
-          <Button to="/portfolio" component={NavLink} className={menuButton}>
-            Portfolio
+          <Button to="/resume" component={NavLink} className={menuButton}>
+            Resume
           </Button>
         ) : (
           " "
         )}
+        {state.auth.isAuthenticated ? (
+          <Button to="/achievements
+          " component={NavLink} className={menuButton}>
+            Achievements
+          </Button>
+        ) : (
+          " "
+        )}
+        {state.auth.isAuthenticated ? (
+          <Button to="/search
+          " component={NavLink} className={menuButton}>
+            Search
+          </Button>
+        ) : (
+          " "
+        )}
+        {state.auth.isAuthenticated ? (
+          <Button to="/about
+          " component={NavLink} className={menuButton}>
+            About
+          </Button>
+        ) : (
+          " "
+        )}
+        {state.auth.isAuthenticated ? (
+          <Button to="/directory
+          " component={NavLink} className={menuButton}>
+            DirectoryBook
+          </Button>
+        ) : (
+          " "
+        )}
+        
         {state.auth.isAuthenticated ? (
           <Button
             to={"/"}
@@ -98,102 +111,5 @@ const Navbar = (props) => {
       </div>
     );
   };
-
-  const getDrawerChoices = () => {
-    return (
-      <div>
-        {" "}
-        {state.auth.isAuthenticated ? (
-          <NavLink to="/dashboard" className="blue-text">
-            <MenuItem>Dashboard</MenuItem>
-          </NavLink>
-        ) : (
-          " "
-        )}{" "}
-        {state.auth.isAuthenticated ? (
-          <NavLink to="/portfolio" className="blue-text">
-            <MenuItem>Portfolio</MenuItem>
-          </NavLink>
-        ) : (
-          " "
-        )}
-        {state.auth.isAuthenticated ? (
-          <a href="/" className="blue-text" onClick={onLogoutClick}>
-            <MenuItem>Logout</MenuItem>
-          </a>
-        ) : (
-          " "
-        )}
-      </div>
-    );
-  };
-
-  const displayDesktop = () => {
-    return (
-      <Toolbar className={toolbar}>
-        <NavLink
-          to="/"
-          style={{
-            textAlign: "center",
-            borderRadius: "3px",
-            letterSpacing: "4px",
-            marginTop: "5px",
-            fontFamily: "Russo One, sans-serif",
-            fontSize: "45px",
-            color: "#3266A1",
-          }}
-        >
-          TylerSilverman
-        </NavLink>
-        <div>{getMenuButtons()}</div>
-      </Toolbar>
-    );
-  };
-
-  const displayMobile = () => {
-    const handleDrawerOpen = () =>
-      setStateMobile((prevState) => ({ ...prevState, drawerOpen: true }));
-    const handleDrawerClose = () =>
-      setStateMobile((prevState) => ({ ...prevState, drawerOpen: false }));
-    return (
-      <Toolbar>
-        <IconButton
-          edge="start"
-          color="#3266A1"
-          aria-label="menu"
-          aria-haspopup="true"
-          onClick={handleDrawerOpen}
-        >
-          <MenuIcon />
-        </IconButton>
-        <Drawer anchor="left" open={drawerOpen} onClose={handleDrawerClose}>
-          <div className={drawerContainer}>{getDrawerChoices()}</div>
-        </Drawer>
-        <NavLink
-          to="/"
-          style={{
-            textAlign: "center",
-            borderRadius: "3px",
-            letterSpacing: "4px",
-            marginTop: "5px",
-            fontFamily: "Russo One, sans-serif",
-            fontSize: "30px",
-            color: "#3266A1",
-          }}
-        >
-          TylerSilverman
-        </NavLink>
-      </Toolbar>
-    );
-  };
-
-return (
-  <nav>
-    <AppBar className={header}>
-      {mobileView ? displayMobile() : displayDesktop()}
-    </AppBar>
-  </nav>
-);
-};
 
 export default Navbar;

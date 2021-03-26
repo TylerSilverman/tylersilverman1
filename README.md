@@ -5,7 +5,3 @@
 ## gitHub: TylerSilverman 
 
 ## www.tylersilverman.github.io
-
-##
-
-##

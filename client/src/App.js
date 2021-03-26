@@ -6,14 +6,17 @@ import { setCurrentUser, logoutUser } from './store/actions/authActions';
 import { Store } from './store';
 
 import './App.css';
+
 import Navbar from './components/partials/Navbar';
-import Footer from './components/partials/Footer';
 import Landing from './components/pages/Landing';
 import Register from './components/pages/Register';
 import Login from './components/pages/Login';
 import PrivateRoute from './components/auth/PrivateRoute';
 import Dashboard from './components/pages/Dashboard';
-import Portfolio from './components/pages/Portfolio';
+import Resume from './components/pages/Resume';
+import About from './components/pages/About';
+import Search from './components/pages/Search';
+import Achievements from './components/pages/Achievements';
 
 const App = () => {
   const { dispatch } = useContext(Store);
@@ -39,14 +42,20 @@ const App = () => {
     <Router>
       <div className="App">
         <Navbar />
+        
         <Route exact path="/" component={Landing} />
         <Route exact path="/register" component={Register} />
         <Route exact path="/login" component={Login} />
+
         <Switch>
           <PrivateRoute exact path="/dashboard" component={Dashboard} />
-          <PrivateRoute exact path="/portfolio" component={Portfolio} />
+          <PrivateRoute exact path="/resume" component={Resume} />
+          <PrivateRoute exact path="/search" component={Search} />
+          <PrivateRoute exact path="/achievements" component={Achievements}/>
+          <PrivateRoute exact path="/about" component={About}/>
+
         </Switch>
-        <Footer />
+      
       </div>
     </Router>
   );
