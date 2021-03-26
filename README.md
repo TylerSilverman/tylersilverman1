@@ -6,6 +6,3 @@
 
 ## www.tylersilverman.github.io
 
-##
-
-##
