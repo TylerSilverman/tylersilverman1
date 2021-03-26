@@ -28,13 +28,12 @@ const Search = props => {
       <div className="row">
         <div className="col s12 center-align">
           <h4>
-            <b>This is the Search Page, {'  '}</b> {user.name.split(' ')[0]}
+            <b>Hey, Search Here {'  '}</b> {user.name.split(' ')[0]}
             {/* <p>Click to Download resume</p> */}
           </h4>
-          <input placeholder="search here"></input>
         <div class="card-body">
-          {/* <a href="https://github.com/TylerSilverman/TylerSilverman.github.io/files/5815941/Resume.pdf"
-            class="btn btn-link">Click to Download resume</a> */}
+         <input placeholder="search here"></input>
+         <button>Search Now </button>
         </div>
         </div>
       </div>
@@ -43,3 +42,4 @@ const Search = props => {
 };
 
 export default Search;
+
