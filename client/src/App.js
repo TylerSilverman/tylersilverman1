@@ -7,8 +7,8 @@ import { Store } from './store';
 
 import './App.css';
 import Footer from './components/partials/Footer';
-
 import Navbar from './components/partials/Navbar';
+
 import Landing from './components/pages/Landing';
 import Register from './components/pages/Register';
 import Login from './components/pages/Login';
@@ -51,10 +51,9 @@ const App = () => {
         <Switch>
           <PrivateRoute exact path="/dashboard" component={Dashboard} />
           <PrivateRoute exact path="/resume" component={Resume} />
-          <PrivateRoute exact path="/search" component={Search} />
           <PrivateRoute exact path="/achievements" component={Achievements}/>
+          <PrivateRoute exact path="/search" component={Search} />
           <PrivateRoute exact path="/about" component={About}/>
-
         </Switch>
       <Footer/>
       </div>

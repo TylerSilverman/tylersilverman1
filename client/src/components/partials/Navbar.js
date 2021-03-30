@@ -2,13 +2,7 @@ import React, { useContext, useState, useEffect } from "react";
 import { NavLink, useHistory } from "react-router-dom";
 import { logoutUser } from "../../store/actions/authActions";
 import { Store } from "../../store";
-import {
-  Button,
-  header,
-  Toolbar,
-  
-
-} from "@material-ui/core";
+import { Button, header } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles(() => ({
@@ -30,13 +24,13 @@ const useStyles = makeStyles(() => ({
     size: "18px",
     marginLeft: "38px",
   },
-  drawerContainer: {
-    padding: "20px 30px",
-  },
+  // drawerContainer: {
+  //   padding: "20px 30px",
+  // },
 }));
 
 const Navbar = (props) => {
-  const { header, menuButton, toolbar, drawerContainer } = useStyles();
+  const { header, menuButton } = useStyles();
 
   const history = useHistory();
   const { state, dispatch } = useContext(Store);
@@ -81,14 +75,14 @@ const Navbar = (props) => {
         ) : (
           " "
         )}
-        {/* {state.auth.isAuthenticated ? (
+        {state.auth.isAuthenticated ? (
           <Button to="/achievements
           " component={NavLink} className={menuButton}>
             Achievements
           </Button>
         ) : (
           " "
-        )} */}
+        )}
         {/* {state.auth.isAuthenticated ? (
           <Button to="/search
           " component={NavLink} className={menuButton}>

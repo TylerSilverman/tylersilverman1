@@ -17,11 +17,11 @@ const Search = props => {
     .catch(err => console.log({ err }));
   }, [ state, props ]);
 
-  const onLogoutClick = e => {
-    e.preventDefault();
+  // const onLogoutClick = e => {
+  //   e.preventDefault();
 
-    logoutUser(props.history)(dispatch);
-  };
+  //   logoutUser(props.history)(dispatch);
+  // };
 
   return (
     <div className="container valign-wrapper" style={{ height: 'auto' }}>

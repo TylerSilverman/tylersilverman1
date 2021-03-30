@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { Store } from '../../store';
 import { Link } from 'react-router-dom';
+import resumeImage from "../../assets/resumeImage.png"
 
 const Landing = props => {
   const { state } = useContext(Store);
@@ -8,7 +9,8 @@ const Landing = props => {
   console.log({ state, props });
 
   return (
-    <div className="container valign-wrapper" background="gray">
+    
+    <div className="container valign-wrapper">
       <div className="row">
         <div className="col s12 center-align">
           <h2>
@@ -19,7 +21,7 @@ const Landing = props => {
           <a href="https://github.com/TylerSilverman/TylerSilverman.github.io/files/6212765/Resume-Tyler.Silverman.pdf">Download Resume</a>
           <br />
           <br></br>
-          <div className="col s6">
+          {/* <div className="col s6">
             <Link to="/register" className="btn btn-large waves-light hoverable blue accent-3" style={{
               width: '140px',
               borderRadius: '3px',
@@ -36,7 +38,7 @@ const Landing = props => {
             }}>
               Login
             </Link>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
