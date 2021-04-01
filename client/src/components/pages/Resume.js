@@ -1,11 +1,10 @@
 import React, { useEffect, useContext } from 'react';
 import { Store } from '../../store';
-import { logoutUser } from '../../store/actions/authActions';
 
 import API from '../../utils/apiHelper';
 
 const Resume = props => {
-  const { state, dispatch } = useContext(Store);
+  const { state } = useContext(Store);
   const user = state.auth.user;
 
   useEffect(() => {
@@ -17,11 +16,7 @@ const Resume = props => {
     .catch(err => console.log({ err }));
   }, [ state, props ]);
 
-  // const onLogoutClick = e => {
-  //   e.preventDefault();
 
-  //   logoutUser(props.history)(dispatch);
-  // };
 
   return (
     <div className="container valign-wrapper" style={{ height: '75vh' }}>

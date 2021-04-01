@@ -1,10 +1,9 @@
 import React, { useEffect, useContext } from 'react';
 import { Store } from '../../store';
-// import { logoutUser } from '../../store/actions/authActions';
 
 import API from '../../utils/apiHelper';
 
-const Achievements = props => {
+const Project = props => {
   const { state } = useContext(Store);
   const user = state.auth.user;
 
@@ -17,11 +16,7 @@ const Achievements = props => {
     .catch(err => console.log({ err }));
   }, [ state, props ]);
 
-  // const onLogoutClick = e => {
-  //   e.preventDefault();
 
-  //   logoutUser(props.history)(dispatch);
-  // };
 
   return (
     <div className="container valign-wrapper" style={{ height: '75vh' }}>
@@ -30,12 +25,12 @@ const Achievements = props => {
           <h4>
             <b>Hey there,</b> {user.name.split(' ')[0]}
             <p className="flow-text grey-text text-darken-1">
-               <span style={{ fontFamily: 'monospace' }}>Acheivements Below{' '}</span> 
+               <span style={{ fontFamily: 'monospace' }}>Projects Below{' '}</span> 
             </p>
             <div class="card-body">
-          <a href="https://github.com/TylerSilverman/TylerSilverman.github.io/files/6212765/Resume-Tyler.Silverman.pdf"
+          <a href="https://roboarmcontrol.herokuapp.com/"
             class="btn btn-link">RoboArm Control</a>
-            <p>Remote Access to DIY</p>
+            <p>DIY Remote Control Claw</p>
         </div>
           </h4>
 
@@ -45,5 +40,4 @@ const Achievements = props => {
   );
 };
 
-
-export default Achievements;
+export default Project;

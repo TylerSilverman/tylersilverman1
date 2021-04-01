@@ -2,7 +2,7 @@ import React, { useContext, useState, useEffect } from "react";
 import { NavLink, useHistory } from "react-router-dom";
 import { logoutUser } from "../../store/actions/authActions";
 import { Store } from "../../store";
-import { Button, header } from "@material-ui/core";
+import { Button } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles(() => ({
@@ -30,16 +30,16 @@ const useStyles = makeStyles(() => ({
 }));
 
 const Navbar = (props) => {
-  const { header, menuButton } = useStyles();
+  const { menuButton } = useStyles();
 
   const history = useHistory();
   const { state, dispatch } = useContext(Store);
-  
+
   const [stateMobile, setStateMobile] = useState({
     mobileView: false,
     drawerOpen: false,
   });
-  const { mobileView, drawerOpen } = stateMobile;
+  // const { mobileView, drawerOpen } = stateMobile;
   // const { mobileView } = stateMobile;
 
   useEffect(() => {
@@ -58,70 +58,46 @@ const Navbar = (props) => {
     logoutUser(history)(dispatch);
   };
 
-    return (
-      <div>
-        {" "}
-        {state.auth.isAuthenticated ? (
-          <Button to="/dashboard" component={NavLink} className={menuButton}>
-            Dashboard
-          </Button>
-        ) : (
-          " "
-        )}{" "}
-        {state.auth.isAuthenticated ? (
-          <Button to="/resume" component={NavLink} className={menuButton}>
-            Resume
-          </Button>
-        ) : (
-          " "
-        )}
-        {state.auth.isAuthenticated ? (
-          <Button to="/achievements
-          " component={NavLink} className={menuButton}>
-            Achievements
-          </Button>
-        ) : (
-          " "
-        )}
-        {/* {state.auth.isAuthenticated ? (
-          <Button to="/search
-          " component={NavLink} className={menuButton}>
-            Search
-          </Button>
-        ) : (
-          " "
-        )}
-        {state.auth.isAuthenticated ? (
-          <Button to="/about
-          " component={NavLink} className={menuButton}>
-            About
-          </Button>
-        ) : (
-          " "
-        )}
-        {state.auth.isAuthenticated ? (
-          <Button to="/directory
-          " component={NavLink} className={menuButton}>
-            DirectoryBook
-          </Button>
-        ) : (
-          " "
-        )} */}
-        
-        {state.auth.isAuthenticated ? (
-          <Button
-            to={"/"}
-            component={NavLink}
-            className={menuButton}
-            onClick={onLogoutClick}
-          >
-            Logout
-          </Button>
-        ) : (
-          " "
-        )}
-      </div>
-    );
-  };
+  return (
+    <div>
+      {" "}
+      {state.auth.isAuthenticated ? (
+        <Button to="/dashboard" component={NavLink} className={menuButton}>
+          Dashboard
+        </Button>
+      ) : (
+        " "
+      )}{" "}
+      {state.auth.isAuthenticated ? (
+        <Button to="/resume" component={NavLink} className={menuButton}>
+          Resume
+        </Button>
+      ) : (
+        " "
+      )}{" "}
+      {state.auth.isAuthenticated ? (
+        <Button to="/project" component={NavLink} className={menuButton}>
+          Project
+        </Button>
+      ) : (
+        " "
+      )}{" "}
+      {state.auth.isAuthenticated ? (
+        <Button to="/search" component={NavLink} className={menuButton}>
+          Search
+        </Button>
+      ) : (
+        " "
+      )}{" "}
+      {state.auth.isAuthenticated ? (
+        <Button to={"/"} component={NavLink} className={menuButton} onClick={onLogoutClick}>
+          Logout
+        </Button>
+      ) : (
+        " "
+      )}{" "}
+    </div>
+  );
+};
 
 export default Navbar;

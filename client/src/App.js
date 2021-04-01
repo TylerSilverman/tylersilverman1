@@ -15,9 +15,8 @@ import Login from './components/pages/Login';
 import PrivateRoute from './components/auth/PrivateRoute';
 import Dashboard from './components/pages/Dashboard';
 import Resume from './components/pages/Resume';
-import About from './components/pages/About';
 import Search from './components/pages/Search';
-import Achievements from './components/pages/Achievements';
+import Project from './components/pages/Project';
 
 const App = () => {
   const { dispatch } = useContext(Store);
@@ -51,9 +50,8 @@ const App = () => {
         <Switch>
           <PrivateRoute exact path="/dashboard" component={Dashboard} />
           <PrivateRoute exact path="/resume" component={Resume} />
-          <PrivateRoute exact path="/achievements" component={Achievements}/>
+          <PrivateRoute exact path="/project" component={Project} />
           <PrivateRoute exact path="/search" component={Search} />
-          <PrivateRoute exact path="/about" component={About}/>
         </Switch>
       <Footer/>
       </div>

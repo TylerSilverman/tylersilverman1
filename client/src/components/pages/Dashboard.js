@@ -1,11 +1,10 @@
 import React, { useEffect, useContext } from 'react';
 import { Store } from '../../store';
-import { logoutUser } from '../../store/actions/authActions';
 
 import API from '../../utils/apiHelper';
 
 const Dashboard = props => {
-  const { state, dispatch } = useContext(Store);
+  const { state } = useContext(Store);
   const user = state.auth.user;
 
   useEffect(() => {
@@ -17,12 +16,7 @@ const Dashboard = props => {
     .catch(err => console.log({ err }));
   }, [ state, props ]);
 
-  // const onLogoutClick = e => {
-  //   e.preventDefault();
-
-  //   logoutUser(props.history)(dispatch);
-  // };
-
+ 
   return (
     <div className="container valign-wrapper" style={{ height: '75vh' }}>
       <div className="row">
@@ -30,13 +24,12 @@ const Dashboard = props => {
           <h4>
             <b>Hey there,</b> {user.name.split(' ')[0]}
             <p className="flow-text grey-text text-darken-1">
-               <span style={{ fontFamily: 'monospace' }}>You are at the Dashboard{' '}</span> 
+               <span style={{ fontFamily: 'monospace' }}>{' '}</span> 
+            </p>
+            <p className="flow-text grey-text text-darken-1">
+               <span style={{ fontFamily: 'monospace' }}> My name is Tyler Silverman. In March 2021 I recieved a certificate in Full Stack Web Development from the University of Central Floria Coding Boot Camp. I consider myself and innovative problem-solver who is passionate about developing apps with a focus on mobile-first design and development. Strengths in creativity, teamwork, and building projects from ideation to execution. Effective at combining creativity and problem solving to develop user-friendly applications. Please feel free to click around the site and see some of the work I have done. {' '}</span> 
             </p>
           </h4>
-          {/* <div class="card-body">
-          <a href="www.silvermanallaround.com">Click to Download resume</a>
-        </div> */}
-
         </div>
       </div>
     </div>

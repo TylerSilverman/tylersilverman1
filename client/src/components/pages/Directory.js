@@ -1,7 +1,6 @@
 import React, { useEffect, useContext } from 'react';
 import { Store } from '../../store';
 import { Link } from 'react-router-dom';
-// import { logoutUser } from '../../store/actions/authActions';
 import API from '../../utils/apiHelper';
 
 
@@ -34,16 +33,6 @@ const Directory = props => {
 
   return (
     <div className="card text-center">
-      <div className="col s6">
-          <br></br>
-            <Link to="/dashboard" className="btn btn-large waves-effect waves-light hoverable green black-text accent-3" style={{
-              width: '140px',
-              borderRadius: '3px',
-              letterSpacing: '1.5px',
-            }}>
-              Dashboard
-            </Link>
-          </div>
       <div className="card-body">{props.children}</div>
       <div className="table thread">
         <form>
