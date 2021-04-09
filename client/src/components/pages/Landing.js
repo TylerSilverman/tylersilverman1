@@ -8,7 +8,6 @@ const useStyles = makeStyles((theme) => ({
   appBar: {
     top: "auto",
     bottom: 0,
-    background: "#3266A1",
     height: "50px",
     justifyContent: "center",
     alignItems: "center",
@@ -24,16 +23,18 @@ const Landing = (props) => {
   
   return (
 <AppBar position="fixed" >
-<div className="container valign-wrapper">
+<div className="container">
       <div className="row">
-        <div className="col s12 center-align" background-color="gray">
-<Link to="/register" className=" btn-small">Register</Link>
+        <div className="col s12 center-align">
+{/* <Link to="/register" className=" btn-small">Register</Link> */}
 <Link to="/login" className="btn btn-small">Login</Link>
-<Link to="/https://www.linkedin.com/in/tylersilverman101/" className=" btn btn-small">LinkedIn</Link>
-<Link to="https://tylersilverman.herokuapp.com/" className=" btn btn-small">Portfolio</Link>
-<Link to="https://github.com/TylerSilverman" className=" btn btn-small">GitHub</Link>
-<Link to="https://github.com/TylerSilverman/TylerSilverman.github.io/files/6212765/Resume-Tyler.Silverman.pdf" className=" btn btn-small">Download Resume</Link>
-<br></br>Welcome to My Portfolio<br></br><br></br>
+<a href="https://www.linkedin.com/in/tylersilverman101/" className=" btn btn-small" className="btn btn-small">LinkedIn</a>
+<a href="https://tylersilverman.herokuapp.com/" className="btn btn-small">Portfolio</a>
+<a href="https://github.com/TylerSilverman" className="btn btn-small">GitHub</a>
+<a href="https://github.com/TylerSilverman/TylerSilverman.github.io/files/6212765/Resume-Tyler.Silverman.pdf" className="btn btn-small">Resume</a>
+<br></br>
+Welcome to My Portfolio, my name is Tyler Silverman 
+<br></br><br></br>
 <b>Summary</b>
 <br></br>
 Certified as a Full Stack Web Developer from the University of Central Florida Coding Boot Camp. Innovative problem-solver who is passionate about developing apps with a focus on mobile-first design and development.
