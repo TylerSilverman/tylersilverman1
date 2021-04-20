@@ -32,34 +32,22 @@ const Landing = (props) => {
 <a href="https://tylersilverman.herokuapp.com/" className="btn btn-small">Portfolio</a>
 <a href="https://github.com/TylerSilverman" className="btn btn-small">GitHub</a>
 <a href="https://github.com/TylerSilverman/TylerSilverman.github.io/files/6212765/Resume-Tyler.Silverman.pdf" className="btn btn-small">Resume</a>
-<br></br>
-Welcome to My Portfolio, my name is Tyler Silverman 
-<br></br><br></br>
-<b>Summary</b>
-<br></br>
-Certified as a Full Stack Web Developer from the University of Central Florida Coding Boot Camp. Innovative problem-solver who is passionate about developing apps with a focus on mobile-first design and development.
-My strengths are in creativity, teamwork, and building projects from ideation to execution. As well as effective at combining creativity and problem solving to develop user-friendly applications.
-<br></br><br></br>
-<b>Technical Skills</b>
-<br></br>
-Languages: JavaScript, CSS3, HTML5, SQL, NoSQL
+<p>Welcome to My Portfolio, my name is Tyler Silverman </p>
+<p><b>Summary</b></p>
+<p>Certified as a Full Stack Web Developer from the University of Central Florida Coding Boot Camp. Innovative problem-solver who is passionate about developing apps with a focus on mobile-first design and development.
+My strengths are in creativity, teamwork, and building projects from ideation to execution. As well as effective at combining creativity and problem solving to develop user-friendly applications.</p>
+<p><b>Technical Skills</b></p>
+<p>Languages: JavaScript, CSS3, HTML5, SQL, NoSQL
 Applications: GitHub, MongoDB, MySQL
-Tools: Express, React, Node, Handlebars, Query, Bootstrap
-<br></br><br></br>
-<b>Projects</b>
-<br></br>
-DIY Remote Control Claw | https://github.com/TylerSilverman/roboarm-app-control  | https://roboarmcontrol.herokuapp.com/
+Tools: Express, React, Node, Handlebars, Query, Bootstrap</p>
+<p><b>Projects</b></p>
+<p>DIY Remote Control Claw | https://github.com/TylerSilverman/roboarm-app-control  | https://roboarmcontrol.herokuapp.com/
 Summary: DIY Remote Control Arm
 Project work with a Partner, Both worked on Front and Backend.
-
-Tools: HTML, CSS, JavaScript, Bootstrap, Material UI, React Socket Io, Raspberry Pi, VNC
-<br></br><br></br>
-<b>Experience</b>
-<br></br>
-GENERAL MANAGER
-<br></br>
-MAGNOLIA BAKERY 	June 2019 - March 2021
-<br></br>
+Tools: HTML, CSS, JavaScript, Bootstrap, Material UI, React Socket Io, Raspberry Pi, VNC</p>
+<p><b>Experience</b></p>
+<p>GENERAL MANAGER</p>
+<p>MAGNOLIA BAKERY 	June 2019 - March 2021</p>
 HR liaison between corporate and restaurant staff, handing new hire onboarding, state filings and employee mediations.
 <br></br>
 Oversee employee work in FOH & BOH, ensuring compliance with company policies, regulations and food safety guidelines.
@@ -70,25 +58,23 @@ Manage restaurant staff, providing feedback on operational excellence
 <br></br><br></br>
 OWNER
 <br></br>
-SILVERMAN ALL AROUND Summer 2004 - Present
+<p>SILVERMAN ALL AROUND Summer 2004 - Present</p>
 <br></br>
-Start Up Business.
+<p>Start Up Business.</p>
 <br></br>
-Continue to build customer relationships
+<p>Continue to build customer relationships</p>
+<p>Managed overall operations, from scheduling to customer process</p>
+<p>Handle all property maintenance and tenant-related issues</p>
 <br></br>
-Managed overall operations, from scheduling to customer process
-<br></br>
-Handle all property maintenance and tenant-related issues
-<br></br><br></br>
-<b>Education</b>
+<p><b>Education</b></p>
 <br></br>
 <b>Bootcamp Certificate:University of Central Florida</b>    Orlando, Florida 	March 2021
 <br></br>
-A 24-week intensive program focused on gaining technical programming skills in HTML5, CSS3, JavaScript, JQuery, Bootstrap, Node Js, MySQL, MongoDB, Express, Handelbars.js & ReactJS.
+<p>A 24-week intensive program focused on gaining technical programming skills in HTML5, CSS3, JavaScript, JQuery, Bootstrap, Node Js, MySQL, MongoDB, Express, Handelbars.js & ReactJS.</p>
 <br></br>
-<b>Florida State University</b>	 Tallahassee, Florida Spring 2013
+<p><b>Florida State University</b>	 Tallahassee, Florida Spring 2013</p>
 <br></br>
-Business Degree - Bachelor of Science Hospitality Management
+<p>Business Degree - Bachelor of Science Hospitality Management</p>
           </div>
         </div>
       </div>
