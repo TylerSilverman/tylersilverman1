@@ -17,6 +17,7 @@ import Dashboard from './components/pages/Dashboard';
 import Resume from './components/pages/Resume';
 import Search from './components/pages/Search';
 import Project from './components/pages/Project';
+import Sample from './components/pages/Sample';
 
 const App = () => {
   const { dispatch } = useContext(Store);
@@ -42,15 +43,15 @@ const App = () => {
     <Router>
       <div className="App">
         <Navbar />
-        
         <Route exact path="/" component={Landing} />
         <Route exact path="/register" component={Register} />
         <Route exact path="/login" component={Login} />
+        <Route exact path="/project" component={Project} />
+        <Route exact path="/sample" component={Sample} />
 
         <Switch>
           <PrivateRoute exact path="/dashboard" component={Dashboard} />
           <PrivateRoute exact path="/resume" component={Resume} />
-          <PrivateRoute exact path="/project" component={Project} />
           <PrivateRoute exact path="/search" component={Search} />
         </Switch>
       <Footer/>
