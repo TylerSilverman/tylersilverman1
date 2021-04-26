@@ -27,7 +27,7 @@ const Dashboard = props => {
                <span style={{ fontFamily: 'monospace' }}>{' '}</span> 
             </p>
             <p className="flow-text grey-text text-darken-1">
-               <span style={{ fontFamily: 'monospace' }}> My name is Tyler Silverman. In March 2021 I recieved a certificate in Full Stack Web Development from the University of Central Floria Coding Boot Camp. I consider myself and innovative problem-solver who is passionate about developing apps with a focus on mobile-first design and development. Strengths in creativity, teamwork, and building projects from ideation to execution. Effective at combining creativity and problem solving to develop user-friendly applications. Please feel free to click around the site and see some of the work I have done. {' '}</span> 
+               <span style={{ fontFamily: 'monospace' }}> My name is Tyler Silverman. Please feel free to click around the site and see some of the work I have done. {' '}</span> 
             </p>
           </h4>
         </div>

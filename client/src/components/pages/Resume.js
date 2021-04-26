@@ -28,7 +28,7 @@ const Resume = props => {
                <span style={{ fontFamily: 'monospace' }}>Resume Below{' '}</span> 
             </p>
             <div class="card-body">
-          <a href="https://github.com/TylerSilverman/TylerSilverman.github.io/files/6212765/Resume-Tyler.Silverman.pdf"
+          <a href="https://github.com/TylerSilverman/TylerSilverman.github.io/files/6378797/TylerSilvermanResumeMay.pdf"
             class="btn btn-link">Click to Download resume</a>
         </div>
           </h4>
