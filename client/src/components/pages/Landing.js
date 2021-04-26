@@ -7,7 +7,7 @@ import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
   appBar: {
-    background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
+    background: 'gray',
   },
 }));
 
@@ -19,7 +19,7 @@ const Landing = (props) => {
   const classes = useStyles();
 
   return (
-    <AppBar position="fixed" >
+    <AppBar position="auto" >
       <div className="container valign-wrapper" style={{ height: 'auto' }}>
         {/* <Link to="/register" className=" btn-small">Register</Link> */}
         <Link to="/login" className="btn btn-small purple">Login</Link>
@@ -29,9 +29,9 @@ const Landing = (props) => {
         <a href="https://github.com/TylerSilverman/TylerSilverman.github.io/files/6212765/Resume-Tyler.Silverman.pdf" className="btn btn-small">Resume</a>
       </div>
 
-      <div className="center">
-        <b>Summary</b>
-      </div>
+      <p className="flow-text bold-text text-darken-2">
+            Summary
+      </p>
       <p>Certified as a Full Stack Web Developer from the University of Central Florida Coding Boot Camp. Innovative problem-solver who is passionate about developing apps with a focus on mobile-first design and development.My strengths are in creativity, teamwork, and building projects from ideation to execution. As well as effective at combining creativity and problem solving to develop user-friendly applications.
         </p>
 
@@ -56,7 +56,15 @@ const Landing = (props) => {
           <br></br>
           <b>Projects</b>
           <br></br>
-          <Link to="/sample"  className="btn btn-small"> Click Here to View Projects!</Link>
+          <Link to="/sample" className="btn btn-small waves-effect waves-light hoverable yellow accent-6" style={{
+              width: '200px',
+              borderRadius: '50px',
+              letterSpacing: '3px',
+              font:'bold',
+              color: 'black',
+            }}>
+              Click to View Projects
+            </Link>
         </div>
         <br></br>
         

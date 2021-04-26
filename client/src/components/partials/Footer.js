@@ -6,8 +6,8 @@ const useStyles = makeStyles((theme) => ({
   appBar: {
     top: "auto",
     bottom: 0,
-    background: "#3266A1",
-    height: "50px",
+    background: "blue",
+    height: "20px",
     justifyContent: "center",
     alignItems: "center",
   },

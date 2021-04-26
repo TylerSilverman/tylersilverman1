@@ -13,10 +13,20 @@ function Sample(achievements) {
         <a href="https://github.com/TylerSilverman" className="btn btn-small">GitHub</a>
         <a href="https://github.com/TylerSilverman/TylerSilverman.github.io/files/6212765/Resume-Tyler.Silverman.pdf" className="btn btn-small">Resume</a>
       </div>
-        <p className="flow-text grey-text text-darken-1">
+      <br></br>
+      <p className=" container valign-wrapper flow-text grey-text text-darken-1">
         <span style={{ fontFamily: 'monospace' }}>Projects Below{' '}</span>
         </p>
-        <p><b><a href="https://roboarmcontrol.herokuapp.com/" className="btn btn-small red">DIY Remote Control Claw </a></b>
+      <div className="container valign-wrapper " style={{ height: '80vh' }}>
+        <p><b><a href="https://roboarmcontrol.herokuapp.com/" className="btn btn-large waves-effect waves-light hoverable yellow accent-3" style={{
+              width: '300px',
+              borderRadius: '70px',
+              letterSpacing: '1px',
+              font:'bold',
+              color: 'black',
+            }}>
+            DIY Remote Control Claw </a></b>
+            <br></br>
         <b><a href="https://tylersilvermanfitnesstrack.herokuapp.com/" className="btn btn-small red" text-color="black">Fitness Tracker</a></b>
         <b><a href="https://tylersilverman.github.io/HW-3-Password-Generator/" className="btn btn-small red" text-color="black">Password Generator</a></b>
         <br></br><br></br>
@@ -30,6 +40,7 @@ function Sample(achievements) {
         <br></br><br></br>
         <b><a href="https://silvermanprogressivebudget.herokuapp.com/" className="btn btn-small red" text-color="black">Budget Calculator</a></b>
         </p>
+        </div>
         </div>
     );
 }
