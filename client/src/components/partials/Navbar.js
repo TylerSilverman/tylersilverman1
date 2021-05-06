@@ -34,13 +34,11 @@ const Navbar = (props) => {
 
   const history = useHistory();
   const { state, dispatch } = useContext(Store);
-
   const [stateMobile, setStateMobile] = useState({
     mobileView: false,
-    drawerOpen: false,
+    header: false
   });
-  // const { mobileView, drawerOpen } = stateMobile;
-  // const { mobileView } = stateMobile;
+  const { mobileView } = stateMobile;
 
   useEffect(() => {
     const setResponsiveness = () => {
@@ -99,5 +97,6 @@ const Navbar = (props) => {
     </div>
   );
 };
+
 
 export default Navbar;
