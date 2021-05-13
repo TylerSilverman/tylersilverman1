@@ -2,11 +2,11 @@ import React from "react";
 import { AppBar, Toolbar, Typography } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
   appBar: {
     top: "auto",
     bottom: 0,
-    background: "blue",
+    background: "green",
     height: "30px",
     justifyContent: "center",
     alignItems: "center",
