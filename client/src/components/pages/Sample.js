@@ -18,7 +18,7 @@ function Sample() {
         <a href="https://github.com/TylerSilverman" target="_blank"><i class="btn btn-small blue" onClick={() => {
           console.info("Button Directs to Github");
         }}>Github</i></a>
-        <a href="https://github.com/TylerSilverman/TylerSilverman.github.io/files/6378797/TylerSilvermanResumeMay.pdf" target="_blank"><i class="btn btn-small blue" onClick={() => {
+        <a href="https://github.com/TylerSilverman/TylerSilverman.github.io/files/6474018/TylerSilvermanResume2021.pdf" target="_blank"><i class="btn btn-small blue" onClick={() => {
           console.info("Button Directs to download Resume for PDF");
         }}>Resume</i></a>
       </div>

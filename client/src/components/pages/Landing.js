@@ -28,7 +28,7 @@ const Landing = props => {
         <a href="https://github.com/TylerSilverman" target="_blank"><i class="btn btn-small blue" onClick={() => {
           console.info("Button Directs to Github");
         }}>Github</i></a>
-        <a href="https://github.com/TylerSilverman/TylerSilverman.github.io/files/6378797/TylerSilvermanResumeMay.pdf" target="_blank"><i class="btn btn-small blue" onClick={() => {
+        <a href="https://github.com/TylerSilverman/TylerSilverman.github.io/files/6474018/TylerSilvermanResume2021.pdf" target="_blank"><i class="btn btn-small blue" onClick={() => {
           console.info("Button Directs to download Resume for PDF");
         }}>Resume</i></a>
         {/* <br></br>
@@ -67,9 +67,12 @@ const Landing = props => {
               <p class="card-text"><b>Languages:</b> JavaScript, CSS3, HTML5, SQL, NoSQL</p>
               <p class="card-text"><b>Applications:</b> GitHub, MongoDB, MySQL</p>
               <p class="card-text"><b>Tools:</b> Express, React, Node, Handlebars, Query, Bootstrap</p>
+              <p class="card-text"><b>Related Skills:</b> Microsoft Office (Word, PowerPoint, Excel)</p>
+              <p class="card-text"><b>Certifications:</b> : Full Stack Web Development, Public Notary for State of Florida, Food Protection | NYC DEPT. of Health & Mental Hygiene, TESOL Certified
+              </p>
             </div>
           </div>
-          <br></br><br></br>
+          <br></br>
           <div class="card">
             <div class="card-body">
               <h5 class="card-title center"><b>Projects</b></h5>
@@ -86,7 +89,7 @@ const Landing = props => {
                 <br></br>
                 <li> <b>Florida State University</b> Tallahassee, Florida Spring 2013</li>
                 <li>Business Degree - Bachelor of Science Hospitality Management</li></p>
-              <br></br>
+              <br></br><br></br><br></br>
             </div>
           </div>
         </div>
