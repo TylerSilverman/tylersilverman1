@@ -1,8 +1,7 @@
 import React, { useContext } from 'react';
 import { Store } from '../../store';
 // import { makeStyles } from "@material-ui/core/styles";
-import LinkedInIcon from '@material-ui/icons/LinkedIn';
-import EmailIcon from '@material-ui/icons/Email';
+import { CardMedia } from "@material-ui/core";
 import profilePicture from "../../assets/profilePicture.jpg";
 
 
@@ -31,29 +30,17 @@ const Landing = props => {
         <a href="https://github.com/TylerSilverman/TylerSilverman.github.io/files/6474018/TylerSilvermanResume2021.pdf" target="_blank"><i class="btn btn-small blue" onClick={() => {
           console.info("Button Directs to download Resume for PDF");
         }}>Resume</i></a>
-        {/* <br></br>
-        <a href="/login" target="_blank"><i class="btn btn-small red" onClick={() => {
+        <br></br>
+        {/* <a href="/login" target="_blank"><i class="btn btn-small " onClick={() => {
           console.info("Button Directs to Login");
-        }}>PortfolioLogin</i></a>
+        }}>Me</i></a>
         <hr class="my-4"></hr> */}
       </div>
-
       <div class="col-sm-12">
         <div class="card">
           <div class="card-body">
             <h5 class="card-title center"><b>Summary</b></h5>
-            {/* // trying to add in a profile picture */}
-            <div class="col-md-4"
-              style={{ padding: 16 }}
-              alignItems="center"
-              justifyContent="center"
-              image={profilePicture}
-              component="img"
-              src="../../assets/profilePicture.jpg"
-              title="profilePicture"
-              alt="profilePicture">
-            </div>
-            {/* // trying to add in a profile picture */}
+           
             <p class="card-text"><ul>Certified as a Full Stack Web Developer from the University of Central Florida Coding Boot Camp. Innovative problem-solver who is passionate about developing apps with a focus on mobile-first design and development.My strengths are in creativity, teamwork, and building projects from ideation to execution. As well as effective at combining creativity and problem solving to develop user-friendly applications.
             </ul></p>
           </div>
@@ -82,6 +69,13 @@ const Landing = props => {
         </div>
         <div class="col-sm-4">
           <div class="card">
+          <CardMedia
+                component="img"
+                title="ProfilePicture"
+                alt="ProfilePic"
+                size="col-sm-4"
+                image={profilePicture}
+              />
             <div class="card-body">
               <h5 class="card-title center"><b>Education</b></h5>
               <p class="card-text"><li>Bootcamp Certificate:<b> University of Central Florida  </b> Orlando, Florida March 2021</li></p>
