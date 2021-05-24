@@ -11,36 +11,11 @@ const Landing = props => {
 
 
   return (
-
     <div class="container">
-      <div class="jumbotron text-center">
-        <h1 class="display-1">TYLER SILVERMAN</h1>
-        <a href="/" target="_blank"><i class="btn btn-small blue" onClick={() => {
-          console.info("Button Directs to Portfolio");
-        }}>Portfolio</i></a>
-        <a href="mailto:silverman.tyler@gmail.com" target="_blank"><i class="btn btn-small blue" onClick={() => {
-          console.info("Button Directs to Microsoft Email");
-        }}>E-mail</i></a>
-        <a href="https://www.linkedin.com/in/tylersilverman101/" target="_blank"><i class="btn btn-small blue" onClick={() => {
-          console.info("Button Directs to LinkedIn");
-        }}>LinkedIn</i></a>
-        <a href="https://github.com/TylerSilverman" target="_blank"><i class="btn btn-small blue" onClick={() => {
-          console.info("Button Directs to Github");
-        }}>Github</i></a>
-        <a href="https://github.com/TylerSilverman/TylerSilverman.github.io/files/6474018/TylerSilvermanResume2021.pdf" target="_blank"><i class="btn btn-small blue" onClick={() => {
-          console.info("Button Directs to download Resume for PDF");
-        }}>Resume</i></a>
-        <br></br>
-        {/* <a href="/login" target="_blank"><i class="btn btn-small " onClick={() => {
-          console.info("Button Directs to Login");
-        }}>Me</i></a>
-        <hr class="my-4"></hr> */}
-      </div>
       <div class="col-sm-12">
         <div class="card">
           <div class="card-body">
             <h5 class="card-title center"><b>Summary</b></h5>
-           
             <p class="card-text"><ul>Certified as a Full Stack Web Developer from the University of Central Florida Coding Boot Camp. Innovative problem-solver who is passionate about developing apps with a focus on mobile-first design and development.My strengths are in creativity, teamwork, and building projects from ideation to execution. As well as effective at combining creativity and problem solving to develop user-friendly applications.
             </ul></p>
           </div>

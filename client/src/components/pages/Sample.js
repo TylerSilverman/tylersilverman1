@@ -19,7 +19,7 @@ function Sample() {
 
   return (
     <div class="container">
-      <div class="jumbotron text-center">
+      {/* <div class="jumbotron text-center">
         <h1 class="display-1">TYLER SILVERMAN</h1>
         <a href="/" target="_blank"><i class="btn btn-small blue" onClick={() => {
           console.info("Button Directs to Portfolio");
@@ -33,10 +33,10 @@ function Sample() {
         <a href="https://github.com/TylerSilverman" target="_blank"><i class="btn btn-small blue" onClick={() => {
           console.info("Button Directs to Github");
         }}>Github</i></a>
-        <a href="https://github.com/TylerSilverman/TylerSilverman.github.io/files/6474018/TylerSilvermanResume2021.pdf" target="_blank"><i class="btn btn-small blue" onClick={() => {
+        <a href="https://github.com/TylerSilverman/TylerSilverman.github.io/files/6533517/TylerSilverman-Resume.pdf" target="_blank"><i class="btn btn-small blue" onClick={() => {
           console.info("Button Directs to download Resume for PDF");
         }}>Resume</i></a>
-      </div>
+      </div> */}
       <div class="col-sm-12">
         
         <div class="card">

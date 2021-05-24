@@ -35,7 +35,7 @@ const Navbar = (props) => {
   const history = useHistory();
   const { state, dispatch } = useContext(Store);
   const [stateMobile, setStateMobile] = useState({
-    mobileView: false,
+    mobileView: true,
     header: false
   });
   const { mobileView } = stateMobile;
@@ -94,7 +94,27 @@ const Navbar = (props) => {
       ) : (
         " "
       )}{" "}
+     <div class="jumbotron text-center">
+        <h1 class="display-1">TYLER SILVERMAN</h1>
+        <a href="/" target="_blank"><i class="btn btn-small blue" onClick={() => {
+          console.info("Button Directs to Portfolio");
+        }}>Portfolio</i></a>
+        <a href="mailto:silverman.tyler@gmail.com" target="_blank"><i class="btn btn-small blue" onClick={() => {
+          console.info("Button Directs to Microsoft Email");
+        }}>E-mail</i></a>
+        <a href="https://www.linkedin.com/in/tylersilverman101/" target="_blank"><i class="btn btn-small blue" onClick={() => {
+          console.info("Button Directs to LinkedIn");
+        }}>LinkedIn</i></a>
+        <a href="https://github.com/TylerSilverman" target="_blank"><i class="btn btn-small blue" onClick={() => {
+          console.info("Button Directs to Github");
+        }}>Github</i></a>
+        <a href="https://github.com/TylerSilverman/TylerSilverman.github.io/files/6533517/TylerSilverman-Resume.pdf" target="_blank"><i class="btn btn-small blue" onClick={() => {
+          console.info("Button Directs to download Resume for PDF");
+        }}>Resume</i></a>
+        <br></br>
+      </div>
     </div>
+    
   );
 };
 
