@@ -11,41 +11,12 @@ import roboArmDYIPic from "../../assets/roboArmDYIPic.PNG";
 import WeatherGuidePic from "../../assets/WeatherGuidePic.PNG";
 import silvermanLLCPic from "../../assets/silvermanLLCPic.PNG";
 import silvermanAllAroundPic from "../../assets/silvermanAllAroundPic.PNG";
-// import profilePicture from "../../assets/profilePicture.jpg";
-
-
 
 function Sample() {
-
   return (
     <div class="container">
-      {/* <div class="jumbotron text-center">
-        <h1 class="display-1">TYLER SILVERMAN</h1>
-        <a href="/" target="_blank"><i class="btn btn-small blue" onClick={() => {
-          console.info("Button Directs to Portfolio");
-        }}>Portfolio</i></a>
-        <a href="mailto:silverman.tyler@gmail.com" target="_blank"><i class="btn btn-small blue" onClick={() => {
-          console.info("Button Directs to Microsoft Email");
-        }}>E-mail</i></a>
-        <a href="https://www.linkedin.com/in/tylersilverman101/" target="_blank"><i class="btn btn-small blue" onClick={() => {
-          console.info("Button Directs to LinkedIn");
-        }}>LinkedIn</i></a>
-        <a href="https://github.com/TylerSilverman" target="_blank"><i class="btn btn-small blue" onClick={() => {
-          console.info("Button Directs to Github");
-        }}>Github</i></a>
-        <a href="https://github.com/TylerSilverman/TylerSilverman.github.io/files/6533517/TylerSilverman-Resume.pdf" target="_blank"><i class="btn btn-small blue" onClick={() => {
-          console.info("Button Directs to download Resume for PDF");
-        }}>Resume</i></a>
-      </div> */}
-      <div class="col-sm-12">
-        
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title center"><b>Projects</b></h5>
-            {/* <p class="card-text center"><ul>Below are my projects.
-            </ul></p> */}
-          </div>
-        </div>
+      <div class="col-sm">
+          <h4 class="card-title center"><b>Projects</b></h4>
       </div>
       <div class="row">
         <div class="col-sm-4">
@@ -61,8 +32,9 @@ function Sample() {
                 image={roboArmDYIPic}
               />
                 <br></br>
-                <li> Group Project with one Partner, both worked on front and Back end</li>
-                <li> DIY remote control claww, allows you to remote access my claw from your web broswer </li>
+                <li>Summary: DIY Remote Control Arm</li>
+                <li>Project work with a Partner</li>
+                <li>Tools: HTML, CSS, JavaScript, Bootstrap, Material UI, React Socket Io, Raspberry Pi, VNC</li>
               <br></br>
             </div>
           </div>
@@ -80,6 +52,8 @@ function Sample() {
                 image={passwordGeneratorPic}
               />
                 <li> Receive a random password that is generated after a series of prompted questions</li>
+                <li>Tools:HTML, CSS, JavaScript, Bootstrap</li>
+
               <br></br>
             </div>
           </div>
@@ -95,9 +69,8 @@ function Sample() {
                 alt="fitnessTrackerPic"
                 image={fitnessTrackerPic}
               />
-                <li> Track Daily fitness with a log</li>
-                <li> After session complete with a detail data graph</li>
-  
+                <li>  Summary: Personal Fitness Tracker with saved sessions for data graph upon completion</li>
+               <li>Tools: HTML, CSS, JavaScript, Bootstrap </li>
               <br></br>
             </div>
           </div>
@@ -116,10 +89,9 @@ function Sample() {
                 alt="nationalParkLocatorPic"
                 image={nationalParkLocatorPic}
               />
-                <li> Group Project worked on both Front and Back End</li>
-                <li> Search National Parks and retrieve data about each location plus weather</li>
-
-              <br></br>
+                <li> Summary: Search for State and get a list of National Parks in the area. Have the option to save the park as a favorite and then also get information about each park and the local weather around the park</li>
+                <li>Tools: HTML, CSS, JavaScript, Bootstrap, API</li> 
+              <br></br> 
             </div>
           </div>
         </div>
@@ -136,7 +108,8 @@ function Sample() {
                 image={peaceAndMindPic}
               />
                 <li> Group Project worked on both Front and Back End</li>
-                <li> React Application</li>
+                <li>Alows you to watch several meditation videos</li>
+                <li>Tools:HTML, CSS, JavaScript, Bootstrap, API, React Application</li>
               <br></br>
             </div>
           </div>
@@ -154,6 +127,7 @@ function Sample() {
               />
                 <li> Plan out you day with colors, to indicate present, past and future times</li>
                 <li> Add and Delete day planner</li>
+                <li>Tools:HTML, CSS, JavaScript, Bootstrap</li>
               <br></br>
             </div>
           </div>
@@ -174,6 +148,7 @@ function Sample() {
               />
                 <li> Budget Tracker Transactions</li>
                 <li> Add and Delete tranactions with a line graph data</li>
+                <li>Tools:HTML, CSS, JavaScript, Bootstrap, MySql</li>
               <br></br>
             </div>
           </div>
@@ -190,9 +165,9 @@ function Sample() {
                 alt="NoteTakerPic"
                 image={NoteTakerPic}
               />
-                <li> Note Taker using Local Host</li>
-                <li> Able to Delete, Save, and Add Notes</li>
-              <br></br>
+                <li>Summary: Application that uses local host to save, delete and add notes</li>
+                <li>Tools: HTML, CSS, JavaScript, Bootstrap</li>
+              <br></br><br></br><br></br><br></br><br></br><br></br>
             </div>
           </div>
         </div>
@@ -209,7 +184,8 @@ function Sample() {
               />
                 <li> Choose City or State for descriptions</li>
                 <li> 5-day Forecast Description</li>
-              <br></br>
+                <li>Tools:HTML, CSS, JavaScript, Bootstrap, API</li>
+              <br></br><br></br><br></br>
             </div>
           </div>
         </div>
@@ -226,8 +202,10 @@ function Sample() {
                 alt="silvermanAllAroundPic"
                 image={silvermanAllAroundPic}
               />
-                <li> Self Employed</li>
-              <br></br>
+                <li>Self Employed</li>
+                <li>Continue to build customer relationships</li>
+                <li>Handyman work, You Name it and I can do it</li>
+                <li>Handle tenant-related issues and property maintenance for rental properties</li>
             </div>
           </div>
         </div>
@@ -241,52 +219,54 @@ function Sample() {
                 component="img"
                 title="silvermanLLCPic"
                 alt="silvermanLLCPic"
-                image={silvermanLLCPic}
-              />
+                image={silvermanLLCPic}/>
                 <li> Self Employed</li>
-              <br></br>
+                <li>Continue to build customer relationships</li>
+                <li>Coder</li>
+                <li>Restaurant Consultant</li>
+              <br></br><br></br><br></br><br></br>
             </div>
           </div>
         </div>
         <div class="col-sm-4">
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title center"><b>Connect With Me</b></h5>
+              <h5 class="card-title center"><b>Coming Soon </b></h5>
               {/* <p class="card-text center"><a href="/" className="btn btn-link">Coming Soon</a></p> */}
-              {/* <p class="card-text"><li> Insert Photo</li> */}
-                <br></br>
-                <li> Email: Silverman.tyler@gmail.com</li>
-                {/* <li> </li> */}
               <br></br>
-            </div>
+              {/* <CardMedia
+                component="img"
+                title=""
+                alt=""
+                image={}/> */}
+              </div>
           </div>
         </div>
+        {/* <div class="col-sm-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title center bold"><b>Comment Below</b></h5>              
+            <p class="card-text"><li> FirstName:</li><textarea>
+              <br></br>
+            </textarea>
+              <li> LastName:</li><textarea>
+              <br></br>
+            </textarea>
+              <li> Email Address:</li><textarea>
+              <br></br>
+            </textarea>
+            <li> Message</li><textarea>
+                <br></br>
+              </textarea>
+              <a href="mailto:silverman.tyler@gmail.com" target="_blank"><i class="link link-large" onClick={() => {
+              console.info("console log all infomation firstname, lastnName, emailAddress, and message, and submits to email address");
+              }}>Submit Comment</i></a>
+            </p>
+            </div>
+          </div>
+        </div> */}
       </div>
     </div>
   )
 }
 export default Sample;
-
-   
-      //     <p className="flow-text bold-text text-darken-4">
-      //       Personal Sites 
-      //     </p>
-      //     <b><a href="https://silvermanallaround.com/" className="btn btn-small waves-effect waves-light hoverable yellow accent-3" style={{
-      //       width: '300px',
-      //       borderRadius: '70px',
-      //       letterSpacing: '1px',
-      //       font: 'bold',
-      //       color: 'black',
-      //     }}>Silverman All Around</a></b>
-      //     <b><a href="https://silvermanllc.com/" className="btn btn-small waves-effect waves-light hoverable yellow accent-3" style={{
-      //       width: '300px',
-      //       borderRadius: '70px',
-      //       letterSpacing: '1px',
-      //       font: 'bold',
-      //       color: 'black',
-      //     }}>Silverman LLC</a></b>
-      //   </p>
-      // </div> */
-
-
-

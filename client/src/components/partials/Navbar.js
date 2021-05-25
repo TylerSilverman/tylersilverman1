@@ -24,9 +24,9 @@ const useStyles = makeStyles(() => ({
     size: "18px",
     marginLeft: "38px",
   },
-  // drawerContainer: {
-  //   padding: "20px 30px",
-  // },
+  drawerContainer: {
+    padding: "20px 30px",
+  },
 }));
 
 const Navbar = (props) => {
@@ -95,7 +95,7 @@ const Navbar = (props) => {
         " "
       )}{" "}
      <div class="jumbotron text-center">
-        <h1 class="display-1">TYLER SILVERMAN</h1>
+        <h1 class="display-2">TYLER SILVERMAN</h1>
         <a href="/" target="_blank"><i class="btn btn-small blue" onClick={() => {
           console.info("Button Directs to Portfolio");
         }}>Portfolio</i></a>
@@ -111,8 +111,16 @@ const Navbar = (props) => {
         <a href="https://github.com/TylerSilverman/TylerSilverman.github.io/files/6533517/TylerSilverman-Resume.pdf" target="_blank"><i class="btn btn-small blue" onClick={() => {
           console.info("Button Directs to download Resume for PDF");
         }}>Resume</i></a>
+        <a href="/sample" target="_blank"><i class="btn btn-small blue" onClick={() => {
+          console.info("Button Directs to download Resume for PDF");
+        }}>Projects</i></a>
+        {/* <a href="/login" target="_blank"><i class="btn btn-small blue" onClick={() => {
+          console.info("sends to login screen");
+        }}>ME</i></a> */}
         <br></br>
+        
       </div>
+      
     </div>
     
   );
