@@ -16,8 +16,9 @@ const Landing = props => {
         <div class="card">
           <div class="card-body">
             <h5 class="card-title center"><b>Summary</b></h5>
-            <p class="card-text"><ul>Certified as a Full Stack Web Developer from the University of Central Florida Coding Boot Camp. Innovative problem-solver who is passionate about developing apps with a focus on mobile-first design and development.My strengths are in creativity, teamwork, and building projects from ideation to execution. As well as effective at combining creativity and problem solving to develop user-friendly applications.
-            </ul></p>
+            <p class="card-text">Certified in Full Stack Web Development from the University of Central Florida and a Business Degree - Bachelor of Science Hospitality Management from Florida State University.</p>
+            <p>Demonstrated a fundamental working knowledge of HTML, CSS, Java-script, third-party APIs, Progressive Web Applications, MySQL, API design, and the MERN stack (MongoDB, Express.js, React.js, Node.js). Ability to build full functional web applications from start to finish. Innovative problem-solver who is passionate about developing apps with a focus on mobile-first design, development and user-friendly applications. My strengths are in creativity, teamwork, and building projects.</p>
+            <p>Experienced in Restaurant Industry for over 8 years, with a demonstrated history from bakeries and grab-&-go’s to fast casual dining. Skilled in Restaurant Consulting, Sales, Quality System Compliance, Restaurant POS systems, Profit and Loss analysis, Training Skills, HR Compliance.</p>
           </div>
         </div>
       </div>
@@ -26,20 +27,17 @@ const Landing = props => {
           <div class="card">
             <div class="card-body">
               <h5 class="card-title center"><b>Technical Skills</b></h5>
-              <p class="card-text"><b>Languages:</b> JavaScript, CSS3, HTML5, SQL, NoSQL</p>
+              <p class="card-text"><b>Languages:</b> : JavaScript, CSS3, HTML5, SQL, NoSQL, and Bi-lingual Conversational Spanish</p>
               <p class="card-text"><b>Applications:</b> GitHub, MongoDB, MySQL</p>
-              <p class="card-text"><b>Tools:</b> Express, React, Node, Handlebars, Query, Bootstrap</p>
-              <p class="card-text"><b>Related Skills:</b> Microsoft Office (Word, PowerPoint, Excel)</p>
-              <p class="card-text"><b>Certifications:</b> : Full Stack Web Development, Public Notary for State of Florida, Food Protection | NYC DEPT. of Health & Mental Hygiene, TESOL Certified
+              <p class="card-text"><b>Tools:</b> : Express, React, Node, Handlebars, Query, Bootstrap, MS Office</p>
+              <p class="card-text"><b>Certifications:</b>Full Stack Web Development, Food Protection | NYC. Dept. of Health & Mental Hygiene, Teaching English as a Second Language (TESOL) Certified, Public Notary for State of Florida
               </p>
             </div>
           </div>
           <br></br>
           <div class="card">
-            <div class="card-body">
-              <h5 class="card-title center"><b>Projects</b></h5>
-              <a href="/sample" class="btn">Click to View Projects</a>
-            </div>
+              {/* <a> a href="/sample" class="card-title center"<b>Projects</b></a> */}
+              <a href="/sample" class="card-title center">Click to View Projects</a>
           </div>
         </div>
         <div class="col-sm-4">

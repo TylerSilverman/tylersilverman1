@@ -108,7 +108,7 @@ const Navbar = (props) => {
         <a href="https://github.com/TylerSilverman" target="_blank"><i class="btn btn-small blue" onClick={() => {
           console.info("Button Directs to Github");
         }}>Github</i></a>
-        <a href="https://github.com/TylerSilverman/TylerSilverman.github.io/files/6533517/TylerSilverman-Resume.pdf" target="_blank"><i class="btn btn-small blue" onClick={() => {
+        <a href="https://github.com/TylerSilverman/TylerSilverman.github.io/files/6650972/TylerSilverman-Resume.pdf" target="_blank"><i class="btn btn-small blue" onClick={() => {
           console.info("Button Directs to download Resume for PDF");
         }}>Resume</i></a>
         <a href="/sample" target="_blank"><i class="btn btn-small blue" onClick={() => {

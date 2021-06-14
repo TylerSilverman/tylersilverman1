@@ -16,8 +16,9 @@ function Sample() {
   return (
     <div class="container">
       <div class="col-sm">
-          <h4 class="card-title center"><b>Projects</b></h4>
+          <h4 class="card-title center"><b>My Projects!</b></h4>
       </div>
+      <br></br>
       <div class="row">
         <div class="col-sm-4">
           <div class="card">
@@ -231,7 +232,7 @@ function Sample() {
         <div class="col-sm-4">
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title center"><b>Coming Soon </b></h5>
+              <h5 class="card-title center"><b>Want to Connect? Send me an email, call or text. </b></h5>
               {/* <p class="card-text center"><a href="/" className="btn btn-link">Coming Soon</a></p> */}
               <br></br>
               {/* <CardMedia
