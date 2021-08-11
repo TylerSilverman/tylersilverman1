@@ -1,6 +1,5 @@
 import React, { useContext } from 'react';
 import { Store } from '../../store';
-// import { makeStyles } from "@material-ui/core/styles";
 import { CardMedia } from "@material-ui/core";
 import profilePicture from "../../assets/profilePicture.jpg";
 
@@ -36,19 +35,30 @@ const Landing = props => {
           </div>
           <br></br>
           <div class="card">
-              {/* <a> a href="/sample" class="card-title center"<b>Projects</b></a> */}
-              <a href="/sample" class="card-title center">Click to View Projects</a>
+            {/* <a> a href="/sample" class="card-title center"<b>Projects</b></a> */}
+            <a href="/sample" class="card-title center">Click to View Projects</a>
+          </div>
+          <div class="card">
+          <h5 class="card-title center"><b>Contact Me</b></h5>
+          <p class="card-text"><input type="text" placeholder="First Name" id="firstName"></input></p>
+          <p class="card-text"><input type="text" placeholder="Last Name" id="lastName"></input></p>
+          <p class="card-text"><input type="email" placeholder="Enter Email Address" id="email"></input></p>
+          <p class="card-text"><input type="text" placeholder="Phone Number" id="phoneNumber"></input></p>
+          <p class="card-text"><input type="text" placeholder="Subject" id="subjectBox"></input></p>
+          <button class="btn btn" onClick={() => {
+          console.info("Your Information was sent, submit button click");
+        }}>Submit</button>
           </div>
         </div>
         <div class="col-sm-4">
           <div class="card">
-          <CardMedia
-                component="img"
-                title="ProfilePicture"
-                alt="ProfilePic"
-                size="col-sm-4"
-                image={profilePicture}
-              />
+            <CardMedia
+              component="img"
+              title="ProfilePicture"
+              alt="ProfilePic"
+              size="col-sm-4"
+              image={profilePicture}
+            />
             <div class="card-body">
               <h5 class="card-title center"><b>Education</b></h5>
               <p class="card-text"><li>Bootcamp Certificate:<b> University of Central Florida  </b> Orlando, Florida March 2021</li></p>
@@ -61,33 +71,6 @@ const Landing = props => {
           </div>
         </div>
       </div>
-      <br></br>
-      {/* <div class="row">
-        <div class="col-sm-12">
-          <div class="card">
-            <div class="card-body">
-              <h3 class="card-title center"><b>Experience</b></h3>
-              <br></br>
-              <h5 class="card-text">MAGNOLIA BAKERY</h5>
-              <p class="card-text"><b>June 2019 - March 2021</b></p>
-              <p class="card-text"><b>General Manager</b></p>
-              <p class="card-text"><li>HR liaison between corporate and restaurant staff</li>
-                <li>Handing new hire onboarding, state filings and employee mediations</li>
-                <li> Oversee employee work in FOH & BOH, ensuring compliance with company policies, regulations and food safety guidelines</li>
-                <li>Oversee food quality control & presentation before serving to guests.</li></p>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title"><b>SILVERMAN ALL AROUND</b></h5>
-              <p class="card-text"><b> Summer 2004 - Present</b></p>
-              <p class="card-text"><b>Owner</b></p>
-              <p class="card-text"><li>Self Employed</li>
-                <li>Continue to build customer relationships.</li>
-                <li>Handyman, as well as provide various clients with home improvements </li>
-                <li>Manage numerous rental properties</li></p>
-            </div>
-          </div>
-        </div>
-      </div> */}
     </div>
   );
 };

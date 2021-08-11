@@ -9,6 +9,9 @@ const bodyParser = require('body-parser');
 // Routes
 const authRoutes = require('./routes/auth');
 const usersRoutes = require('./routes/users');
+//added route for contact box 
+const contactRoutes = require('./routes/contact');
+
 
 const PORT = process.env.PORT || 3001;
 

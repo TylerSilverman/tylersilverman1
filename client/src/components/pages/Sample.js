@@ -16,7 +16,20 @@ function Sample() {
   return (
     <div class="container">
       <div class="col-sm">
+      {/* <h2>Projects</h2>
+      <div id="myBtnContainer">
+        <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+        <button class="btn" onclick="filterSelection('nature')"> Group</button>
+        <button class="btn" onclick="filterSelection('cars')"> Individual</button>
+        <button class="btn" onclick="filterSelection('people')"> Personal</button>
+      </div> */}
           <h4 class="card-title center"><b>My Projects!</b></h4>
+          {/* <div id="myBtnContainer">
+        <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+        <button class="btn" onclick="filterSelection('nature')"> Group</button>
+        <button class="btn" onclick="filterSelection('cars')"> Individual</button>
+        <button class="btn" onclick="filterSelection('people')"> Personal</button>
+      </div> */}
       </div>
       <br></br>
       <div class="row">
