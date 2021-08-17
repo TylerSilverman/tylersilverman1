@@ -28,8 +28,9 @@ const Resume = props => {
                <span style={{ fontFamily: 'monospace' }}>Resume Below{' '}</span> 
             </p>
             <div class="card-body">
-          <a href="https://github.com/TylerSilverman/TylerSilverman.github.io/files/6657776/TylerSilverman-Resume.pdf"
-            class="btn btn-link">Click to Download resume</a>
+            <a href="https://github.com/TylerSilverman/TylerSilverman.github.io/files/6657776/TylerSilverman-Resume.pdf" target="_blank"><i class="btn btn-small yelloe" onClick={() => {
+          console.info("Button Directs to download Resume for PDF");
+        }}>Click Here to Download PDF File</i></a>
         </div>
           </h4>
 

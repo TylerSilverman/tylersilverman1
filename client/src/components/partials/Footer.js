@@ -1,13 +1,15 @@
 import React from "react";
 import { AppBar, Toolbar } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
+import { Link } from 'react-router-dom';
+
 
 const useStyles = makeStyles(() => ({
   appBar: {
     top: "auto",
     bottom: 0,
-    background: "lightgray",
-    height: "50px",
+    background: "gray",
+    height: "65px",
     justifyContent: "center",
     alignItems: "center",
   },
@@ -39,10 +41,13 @@ const Footer = (props) => {
         <a href="/sample" target="_blank"><i class="link link-small" onClick={() => {
           console.info("Button Directs to download Resume for PDF");
         }}>Projects</i></a> */}
-        <a href="/login" target="_blank"><i class="link link-small" onClick={() => {
+        {/* <a href="/login" target="_blank"><i class="link link-small" onClick={() => {
           console.info("sends to login screen");
-        }}>ME</i></a>
+        }}>ME</i></a> */}
       </Toolbar>
+      <p className="grey-text text-darken-1">
+            <Link to="/login">Click To Login In</Link>
+            </p>
     </AppBar>
   );
 };

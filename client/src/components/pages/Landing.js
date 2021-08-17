@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import { Store } from '../../store';
 import { CardMedia } from "@material-ui/core";
 import profilePicture from "../../assets/profilePicture.jpg";
+import { Link } from 'react-router-dom';
 
 
 const Landing = props => {
@@ -39,15 +40,10 @@ const Landing = props => {
             <a href="/sample" class="card-title center">Click to View Projects</a>
           </div>
           <div class="card">
-          <h5 class="card-title center"><b>Contact Me</b></h5>
-          <p class="card-text"><input type="text" placeholder="First Name" id="firstName"></input></p>
-          <p class="card-text"><input type="text" placeholder="Last Name" id="lastName"></input></p>
-          <p class="card-text"><input type="email" placeholder="Enter Email Address" id="email"></input></p>
-          <p class="card-text"><input type="text" placeholder="Phone Number" id="phoneNumber"></input></p>
-          <p class="card-text"><input type="text" placeholder="Subject" id="subjectBox"></input></p>
-          <button class="btn btn" onClick={() => {
-          console.info("Your Information was sent, submit button click");
-        }}>Submit</button>
+          <p className="grey-text text-darken-1" class="card-title center">
+              {/* Comment Here  */}
+              <Link to="/register">Click Here to Submit Contact Info</Link>
+            </p>
           </div>
         </div>
         <div class="col-sm-4">

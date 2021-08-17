@@ -1,16 +1,16 @@
 import React, { useEffect, useRef, useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { Store } from '../../store';
-import { registerUser, setErrors } from '../../store/actions/authActions';
+import { contactBoxUser, setErrors } from '../../store/actions/authActions';
 import classnames from 'classnames';
 
-const Register = props => {
+const ContactBox = props => {
   const { state, dispatch } = useContext(Store);
   const errors = state.error;
   const nameRef = useRef();
   const emailRef = useRef();
-  const passwordRef = useRef();
-  const password2Ref = useRef();
+  const subjectRef = useRef();
+//   const password2Ref = useRef();
 
   useEffect(() => {
     if (state.auth.isAuthenticated)
@@ -25,11 +25,11 @@ const Register = props => {
     const userData = {
       name: nameRef.current.value,
       email: emailRef.current.value,
-      password: passwordRef.current.value,
-      password2: password2Ref.current.value,
+      subject: subjectRef.current.value,
+    //   password2: password2Ref.current.value,
     };
 
-    registerUser(userData, props.history)(dispatch);
+    contactBoxUser(userData, props.history)(dispatch);
   };
 
   return (
@@ -41,10 +41,12 @@ const Register = props => {
           </Link>
           <div className="col s12" style={{ paddingLeft: '11.250px' }}>
             <h4>
-              <b>Comment Here</b>
+              <b>Register</b> below
             </h4>
+            <p className="grey-text text-darken-1">
+              Already have an account? <Link to="/login">Login</Link>
+            </p>
           </div>
-          <div class="card">
           <form noValidate onSubmit={onSubmit}>
             <div className="input-field col s12">
               <input ref={nameRef} error={errors.name} name="name" type="text"
@@ -61,15 +63,15 @@ const Register = props => {
             <div className="input-field col s12">
               <input ref={passwordRef} error={errors.password} name="password" type="password"
                      className={classnames('', { invalid: errors.password })} />
-              <label htmlFor="password">Subject</label>
+              <label htmlFor="password">Password</label>
               <span className="red-text">{errors.password}</span>
             </div>
-            {/* <div className="input-field col s12">
+            <div className="input-field col s12">
               <input ref={password2Ref} error={errors.password2} name="password2" type="password"
                      className={classnames('', { invalid: errors.password2 })} />
               <label htmlFor="password2">Confirm Password</label>
               <span className="red-text">{errors.password2}</span>
-            </div> */}
+            </div>
             <div className="col s12" style={{ paddingLeft: '11.250px' }}>
               <button className="btn btn-large waves-effect waves-light hoverable blue accent-3" style={{
                 width: '150px',
@@ -77,15 +79,14 @@ const Register = props => {
                 letterSpacing: '1.5px',
                 marginTop: '1rem',
               }} type="submit">
-                Submit
+                Sign Up
               </button>
             </div>
           </form>
-          </div>
         </div>
       </div>
     </div>
   );
 };
 
-export default Register;
+export default ContactBox;
