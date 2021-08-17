@@ -2,7 +2,7 @@
     "version": "1.0.0",
     "name": "portfolioHerokuGithubTylerApp",
     "license": "MIT",
-    "description": "Starter MERN application with Passport user authentication using JSON Web Tokens.",
+    "description": "Portfolio for Tyler Silverman",
     "main": "server.js",
     "scripts": {
         "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",

@@ -4,6 +4,8 @@ import { logoutUser } from "../../store/actions/authActions";
 import { Store } from "../../store";
 import { Button } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
+import { Link } from 'react-router-dom';
+
 
 const useStyles = makeStyles(() => ({
   header: {
@@ -96,30 +98,11 @@ const Navbar = (props) => {
       )}{" "}
      <div class="jumbotron text-center">
         <h1 class="display-2">TYLER SILVERMAN</h1>
-        <a href="/" target="_blank"><i class="btn btn-small blue" onClick={() => {
-          console.info("Button Directs to Portfolio");
-        }}>Portfolio</i></a>
-        <a href="mailto:silverman.tyler@gmail.com" target="_blank"><i class="btn btn-small blue" onClick={() => {
-          console.info("Button Directs to Microsoft Email");
-        }}>E-mail</i></a>
-        <a href="https://www.linkedin.com/in/tylersilverman101/" target="_blank"><i class="btn btn-small blue" onClick={() => {
-          console.info("Button Directs to LinkedIn");
-        }}>LinkedIn</i></a>
-        <a href="https://github.com/TylerSilverman" target="_blank"><i class="btn btn-small blue" onClick={() => {
-          console.info("Button Directs to Github");
-        }}>Github</i></a>
-        <a href="https://github.com/TylerSilverman/TylerSilverman.github.io/files/6657776/TylerSilverman-Resume.pdf" target="_blank"><i class="btn btn-small blue" onClick={() => {
-          console.info("Button Directs to download Resume for PDF");
-        }}>Resume</i></a>
-        <a href="/sample" target="_blank"><i class="btn btn-small blue" onClick={() => {
-          console.info("Button Directs to download Resume for PDF");
-        }}>Projects</i></a>
-        {/* <a href="/login" target="_blank"><i class="btn btn-small blue" onClick={() => {
-          console.info("sends to login screen");
-        }}>ME</i></a> */}
-        <br></br>
-        
+        <Link to="/" className="btn-flat waves-effect">
+            <i className="material-icons left">keyboard_backspace</i> Back to Portfolio
+          </Link>  
       </div>
+      
       
     </div>
     

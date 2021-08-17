@@ -10,6 +10,7 @@ import Footer from './components/partials/Footer';
 import Navbar from './components/partials/Navbar';
 
 import Landing from './components/pages/Landing';
+import Contact from './components/pages/Contact';
 import Register from './components/pages/Register';
 import Login from './components/pages/Login';
 import PrivateRoute from './components/auth/PrivateRoute';
@@ -48,6 +49,7 @@ const App = () => {
         <Route exact path="/login" component={Login} />
         <Route exact path="/project" component={Project} />
         <Route exact path="/sample" component={Sample} />
+        <Route exact path="/contact" component={Contact} />
 
         <Switch>
           <PrivateRoute exact path="/dashboard" component={Dashboard} />

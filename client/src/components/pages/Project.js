@@ -65,9 +65,17 @@ function Project () {
                 alt="passwordGeneratorPic"
                 image={passwordGeneratorPic}
               />
-                <li> Receive a random password that is generated after a series of prompted questions</li>
+              <br></br>
+                <br></br><br></br>
+                <br></br>
+                <li> Generate a randomized password after a series of prompted questions</li>
                 <li>Tools:HTML, CSS, JavaScript, Bootstrap</li>
 
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br><br></br>
+                <br></br>
               <br></br>
             </div>
           </div>

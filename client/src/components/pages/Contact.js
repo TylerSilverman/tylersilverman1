@@ -1,16 +1,15 @@
 import React, { useEffect, useRef, useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { Store } from '../../store';
-import { contactBoxUser, setErrors } from '../../store/actions/authActions';
+import { registerUser, setErrors } from '../../store/actions/authActions';
 import classnames from 'classnames';
 
-const ContactBox = props => {
+const Contact = props => {
   const { state, dispatch } = useContext(Store);
   const errors = state.error;
   const nameRef = useRef();
   const emailRef = useRef();
   const subjectRef = useRef();
-//   const password2Ref = useRef();
 
   useEffect(() => {
     if (state.auth.isAuthenticated)
@@ -22,31 +21,25 @@ const ContactBox = props => {
 
     dispatch(setErrors({ response: { data: {} } }));
 
-    const userData = {
+    const contactData = {
       name: nameRef.current.value,
       email: emailRef.current.value,
       subject: subjectRef.current.value,
-    //   password2: password2Ref.current.value,
     };
 
-    contactBoxUser(userData, props.history)(dispatch);
+    registerUser(contactData, props.history)(dispatch);
   };
 
   return (
     <div className="container">
       <div className="row">
         <div className="col s8 offset-s2">
-          <Link to="/" className="btn-flat waves-effect">
-            <i className="material-icons left">keyboard_backspace</i> Back to home
-          </Link>
-          <div className="col s12" style={{ paddingLeft: '11.250px' }}>
-            <h4>
-              <b>Register</b> below
-            </h4>
-            <p className="grey-text text-darken-1">
-              Already have an account? <Link to="/login">Login</Link>
-            </p>
+          <div className="col s12" style={{ paddingLeft: '15.250px' }}>
+          <b>Comment Here</b>         
           </div>
+          <br></br>
+          <br></br>
+          <div class="card">
           <form noValidate onSubmit={onSubmit}>
             <div className="input-field col s12">
               <input ref={nameRef} error={errors.name} name="name" type="text"
@@ -61,32 +54,27 @@ const ContactBox = props => {
               <span className="red-text">{errors.email}</span>
             </div>
             <div className="input-field col s12">
-              <input ref={passwordRef} error={errors.password} name="password" type="password"
-                     className={classnames('', { invalid: errors.password })} />
-              <label htmlFor="password">Password</label>
-              <span className="red-text">{errors.password}</span>
-            </div>
-            <div className="input-field col s12">
-              <input ref={password2Ref} error={errors.password2} name="password2" type="password"
-                     className={classnames('', { invalid: errors.password2 })} />
-              <label htmlFor="password2">Confirm Password</label>
-              <span className="red-text">{errors.password2}</span>
+              <input ref={subjectRef} error={errors.subject} name="subject" type="text"
+                     className={classnames('', { invalid: errors.subject })} />
+              <label htmlFor="subject">Subject</label>
+              <span className="red-text">{errors.subject}</span>
             </div>
             <div className="col s12" style={{ paddingLeft: '11.250px' }}>
-              <button className="btn btn-large waves-effect waves-light hoverable blue accent-3" style={{
+              <button className="btn btn-large waves-effect waves-light hoverable blue accent-3" alert="Information Sent Successfully" style={{
                 width: '150px',
                 borderRadius: '3px',
                 letterSpacing: '1.5px',
                 marginTop: '1rem',
               }} type="submit">
-                Sign Up
+                Submit
               </button>
             </div>
           </form>
+          </div>
         </div>
       </div>
     </div>
   );
 };
 
-export default ContactBox;
+export default Contact;

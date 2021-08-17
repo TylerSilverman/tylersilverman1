@@ -37,7 +37,7 @@ const Login = props => {
           </Link>
           <p className="grey-text text-darken-1">
               {/* Comment Here  */}
-              <Link to="/register">Click Here to Submit Contact Info</Link>
+              <Link to="/contact">Click Here to Submit Contact Info</Link>
           </p>
           <div className="col s12" style={{ paddingLeft: '11.250px' }}>
             <h4>

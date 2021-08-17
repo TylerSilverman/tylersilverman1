@@ -40,10 +40,30 @@ const Landing = props => {
             <a href="/sample" class="card-title center">Click to View Projects</a>
           </div>
           <div class="card">
-          <p className="grey-text text-darken-1" class="card-title center">
+            <p className="grey-text text-darken-1" class="card-title center">
               {/* Comment Here  */}
-              <Link to="/register">Click Here to Submit Contact Info</Link>
+              <Link to="/contact">Click Here to Submit Contact Info</Link>
             </p>
+          </div>
+          <div class="card">
+            <a href="mailto:silverman.tyler@gmail.com" className="grey-text text-darken-1" class="card-title center" target="_blank" onClick={() => {
+              console.info("Button Directs to Microsoft Email");
+            }}>E-mail</a>
+          </div>
+          <div class="card">
+            <a href="https://www.linkedin.com/in/tylersilverman101/" target="_blank" className="grey-text text-darken-1" class="card-title center" target="_blank" onClick={() => {
+              console.info("linkedin");
+            }}>LinkedIn</a>
+          </div>
+          <div class="card">
+            <a href="https://github.com/TylerSilverman" target="_blank" className="grey-text text-darken-1" class="card-title center" target="_blank" onClick={() => {
+              console.info("github");
+            }}>GitHub</a>
+          </div>
+          <div class="card">
+            <a href="https://github.com/TylerSilverman/TylerSilverman.github.io/files/6657776/TylerSilverman-Resume.pdf" target="_blank" className="grey-text text-darken-1" class="card-title center" target="_blank" onClick={() => {
+              console.info("resume");
+            }}>Resume</a>
           </div>
         </div>
         <div class="col-sm-4">
