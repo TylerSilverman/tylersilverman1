@@ -34,11 +34,7 @@ const Contact = props => {
     <div className="container">
       <div className="row">
         <div className="col s8 offset-s2">
-          <div className="col s12" style={{ paddingLeft: '15.250px' }}>
-          <b>Comment Here</b>         
-          </div>
-          <br></br>
-          <br></br>
+                  <br></br>
           <div class="card">
           <form noValidate onSubmit={onSubmit}>
             <div className="input-field col s12">
@@ -59,8 +55,11 @@ const Contact = props => {
               <label htmlFor="subject">Subject</label>
               <span className="red-text">{errors.subject}</span>
             </div>
-            <div className="col s12" style={{ paddingLeft: '11.250px' }}>
-              <button className="btn btn-large waves-effect waves-light hoverable blue accent-3" alert="Information Sent Successfully" style={{
+            <div className="col s6" style={{ paddingLeft: '400.250px' }}>
+              <button className="btn btn waves-effect waves-light blue hoverable accent-4" alert="Information Sent Successfully" onClick={() => {
+              console.info("Submit Button Clicked");
+            }}
+                style={{
                 width: '150px',
                 borderRadius: '3px',
                 letterSpacing: '1.5px',
@@ -68,13 +67,41 @@ const Contact = props => {
               }} type="submit">
                 Submit
               </button>
+              <br></br>
             </div>
           </form>
+          <br></br> <br></br>
           </div>
+          <br></br> <br></br>
+          <div class="card">
+            <a href="mailto:silverman.tyler@gmail.com" className="grey-text text-darken-1" class="card-title center" target="_blank" onClick={() => {
+              console.info("Button Directs to Microsoft Email");
+            }}>E-mail</a>
+          </div>
+          <div class="card">
+            <a href="https://www.linkedin.com/in/tylersilverman101/" target="_blank" className="grey-text text-darken-1" class="card-title center" target="_blank" onClick={() => {
+              console.info("linkedin");
+            }}>LinkedIn</a>
+          </div>
+          <div class="card">
+            <a href="https://github.com/TylerSilverman" target="_blank" className="grey-text text-darken-1" class="card-title center" target="_blank" onClick={() => {
+              console.info("github");
+            }}>GitHub</a>
+          </div>
+          <div class="card">
+            <a href="https://github.com/TylerSilverman/TylerSilverman.github.io/files/6657776/TylerSilverman-Resume.pdf" target="_blank" className="grey-text text-darken-1" class="card-title center" target="_blank" onClick={() => {
+              console.info("resume");
+            }}>Resume</a>
+          </div>
+          <Link to="/" className="btn-flat waves-effect">
+            <i className="material-icons left">keyboard_backspace</i> Back to Portfolio
+          </Link>  
         </div>
       </div>
     </div>
   );
 };
+
+
 
 export default Contact;

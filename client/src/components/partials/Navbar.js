@@ -98,12 +98,7 @@ const Navbar = (props) => {
       )}{" "}
      <div class="jumbotron text-center">
         <h1 class="display-2">TYLER SILVERMAN</h1>
-        <Link to="/" className="btn-flat waves-effect">
-            <i className="material-icons left">keyboard_backspace</i> Back to Portfolio
-          </Link>  
       </div>
-      
-      
     </div>
     
   );

@@ -36,14 +36,14 @@ const Landing = props => {
           </div>
           <br></br>
           <div class="card">
-            {/* <a> a href="/sample" class="card-title center"<b>Projects</b></a> */}
-            <a href="/sample" class="card-title center">Click to View Projects</a>
-          </div>
-          <div class="card">
             <p className="grey-text text-darken-1" class="card-title center">
               {/* Comment Here  */}
-              <Link to="/contact">Click Here to Submit Contact Info</Link>
+              <Link to="/contact">Submit Contact Info</Link>
             </p>
+          </div>
+          <div class="card">
+            {/* <a> a href="/sample" class="card-title center"<b>Projects</b></a> */}
+            <a href="/sample" class="card-title center">View Projects</a>
           </div>
           <div class="card">
             <a href="mailto:silverman.tyler@gmail.com" className="grey-text text-darken-1" class="card-title center" target="_blank" onClick={() => {

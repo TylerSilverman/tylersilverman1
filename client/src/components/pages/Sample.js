@@ -16,6 +16,9 @@ import { Link } from 'react-router-dom';
 function Sample() {
   return (
     <div class="container">
+      <Link to="/" className="btn-flat waves-effect">
+            <i className="material-icons left">keyboard_backspace</i> Back to Portfolio
+          </Link>  
       <div class="col-sm">
           <h4 class="card-title center"><b>My Projects!</b></h4>
       </div>
@@ -236,35 +239,15 @@ function Sample() {
                 image={silvermanLLCPic}/>
                 <li> Self Employed</li>
                 <li>Continue to build customer relationships</li>
-                <li>Coder</li>
+                <li>Full Stack Web Developer</li>
                 <li>Restaurant Consultant</li>
+                <li>Teach English as a Second Language</li>
               <br></br><br></br><br></br><br></br>
             </div>
+            
           </div>
+          
         </div>
-        {/* <div class="col-sm-4">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title center bold"><b>Comment Below</b></h5>              
-            <p class="card-text"><li> FirstName:</li><textarea>
-              <br></br>
-            </textarea>
-              <li> LastName:</li><textarea>
-              <br></br>
-            </textarea>
-              <li> Email Address:</li><textarea>
-              <br></br>
-            </textarea>
-            <li> Message</li><textarea>
-                <br></br>
-              </textarea>
-              <a href="mailto:silverman.tyler@gmail.com" target="_blank"><i class="link link-large" onClick={() => {
-              console.info("console log all infomation firstname, lastnName, emailAddress, and message, and submits to email address");
-              }}>Submit Comment</i></a>
-            </p>
-            </div>
-          </div>
-        </div> */}
       </div>
     </div>
   )
