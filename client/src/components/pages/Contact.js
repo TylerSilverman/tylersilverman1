@@ -4,6 +4,7 @@ import { Store } from '../../store';
 import { registerUser, setErrors } from '../../store/actions/authActions';
 import classnames from 'classnames';
 
+
 const Contact = props => {
   const { state, dispatch } = useContext(Store);
   const errors = state.error;
@@ -18,7 +19,7 @@ const Contact = props => {
 
   const onSubmit = e => {
     e.preventDefault();
-
+    alert("Sorry for the inconvenience, as I am continually updating my site, please use the email tab on the main page to connect with me. Thank you!")
     dispatch(setErrors({ response: { data: {} } }));
 
     const contactData = {

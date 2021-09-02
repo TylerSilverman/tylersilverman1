@@ -27,6 +27,11 @@ const Footer = (props) => {
         <a href="/login" target="_blank"><i class="link link" onClick={() => {
           console.info("sends to login screen");
         }}>ME</i></a>
+        <br></br>
+        {/* //uncomment this and you can register users */}
+         <a href="/register" target="_blank"><i class="link link" onClick={() => {
+          console.info("sends to login screen");
+        }}>register</i></a>
       </Toolbar>
     </AppBar>
   );
