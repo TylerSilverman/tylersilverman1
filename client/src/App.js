@@ -16,7 +16,7 @@ import Login from './components/pages/Login';
 import PrivateRoute from './components/auth/PrivateRoute';
 import Dashboard from './components/pages/Dashboard';
 import Resume from './components/pages/Resume';
-import Search from './components/pages/Search';
+
 import Project from './components/pages/Project';
 import Sample from './components/pages/Sample';
 
@@ -54,7 +54,7 @@ const App = () => {
         <Switch>
           <PrivateRoute exact path="/dashboard" component={Dashboard} />
           <PrivateRoute exact path="/resume" component={Resume} />
-          <PrivateRoute exact path="/search" component={Search} />
+       
         </Switch>
       <Footer/>
       </div>

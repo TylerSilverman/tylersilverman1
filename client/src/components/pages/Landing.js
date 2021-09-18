@@ -42,26 +42,32 @@ const Landing = props => {
             </p>
           </div>
           <div class="card">
-            {/* <a> a href="/sample" class="card-title center"<b>Projects</b></a> */}
-            <a href="/sample" class="card-title center">View Projects</a>
+            <a href="/sample" target="_blank" className="grey-text text-darken-1" class="card-title center" target="_blank" onClick={() => {
+               alert ("Ready to view Projects"),
+              console.info("github");
+            }}>View Projects</a>
           </div>
           <div class="card">
             <a href="mailto:silverman.tyler@gmail.com" className="grey-text text-darken-1" class="card-title center" target="_blank" onClick={() => {
+               alert ("Now directing you to Microsoft Email"),
               console.info("Button Directs to Microsoft Email");
             }}>E-mail</a>
           </div>
           <div class="card">
             <a href="https://www.linkedin.com/in/tylersilverman101/" target="_blank" className="grey-text text-darken-1" class="card-title center" target="_blank" onClick={() => {
+              alert ("Now directing you to my LinkedIn Profile"),
               console.info("linkedin");
             }}>LinkedIn</a>
           </div>
           <div class="card">
             <a href="https://github.com/TylerSilverman" target="_blank" className="grey-text text-darken-1" class="card-title center" target="_blank" onClick={() => {
+               alert ("Now directing you to my Github Profile"),
               console.info("github");
             }}>GitHub</a>
           </div>
           <div class="card">
             <a href="https://github.com/TylerSilverman/TylerSilverman.github.io/files/6657776/TylerSilverman-Resume.pdf" target="_blank" className="grey-text text-darken-1" class="card-title center" target="_blank" onClick={() => {
+               alert ("Successfully downloaded my resume"),
               console.info("resume");
             }}>Resume</a>
           </div>

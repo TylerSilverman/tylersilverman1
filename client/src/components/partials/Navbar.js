@@ -82,13 +82,13 @@ const Navbar = (props) => {
       ) : (
         " "
       )}{" "}
-      {state.auth.isAuthenticated ? (
+      {/* {state.auth.isAuthenticated ? (
         <Button to="/search" component={NavLink} className={menuButton}>
           Search
         </Button>
       ) : (
         " "
-      )}{" "}
+      )}{" "} */}
       {state.auth.isAuthenticated ? (
         <Button to={"/"} component={NavLink} className={menuButton} onClick={onLogoutClick}>
           Logout
