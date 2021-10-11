@@ -3,7 +3,7 @@ import { Store } from '../../store';
 
 import API from '../../utils/apiHelper';
 
-const Resume = props => {
+const SearchBar = props => {
   const { state } = useContext(Store);
   const user = state.auth.user;
 
@@ -47,4 +47,4 @@ const Resume = props => {
   );
 };
 
-export default Resume;
+export default SearchBar;

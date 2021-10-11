@@ -11,25 +11,17 @@ import roboArmDYIPic from "../../assets/roboArmDYIPic.PNG";
 import WeatherGuidePic from "../../assets/WeatherGuidePic.PNG";
 import silvermanLLCPic from "../../assets/silvermanLLCPic.PNG";
 import silvermanAllAroundPic from "../../assets/silvermanAllAroundPic.PNG";
+// import { Link } from 'react-router-dom';
 
-function Project () {
+
+function Project() {
   return (
     <div class="container">
+      {/* <Link to="/" className="btn-flat waves-effect">
+            <i className="material-icons left">keyboard_backspace</i> Back to Portfolio
+          </Link>   */}
       <div class="col-sm">
-      {/* <h2>Projects</h2>
-      <div id="myBtnContainer">
-        <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-        <button class="btn" onclick="filterSelection('nature')"> Group</button>
-        <button class="btn" onclick="filterSelection('cars')"> Individual</button>
-        <button class="btn" onclick="filterSelection('people')"> Personal</button>
-      </div> */}
           <h4 class="card-title center"><b>My Projects!</b></h4>
-          {/* <div id="myBtnContainer">
-        <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-        <button class="btn" onclick="filterSelection('nature')"> Group</button>
-        <button class="btn" onclick="filterSelection('cars')"> Individual</button>
-        <button class="btn" onclick="filterSelection('people')"> Personal</button>
-      </div> */}
       </div>
       <br></br>
       <div class="row">
@@ -54,6 +46,9 @@ function Project () {
           </div>
         </div>
         <br></br><br></br>
+        <br></br>
+                <br></br>
+                <br></br>
         <div class="col-sm-4">
           <div class="card">
             <div class="card-body">
@@ -66,17 +61,15 @@ function Project () {
                 image={passwordGeneratorPic}
               />
               <br></br>
-                <br></br><br></br>
-                <br></br>
                 <li> Generate a randomized password after a series of prompted questions</li>
                 <li>Tools:HTML, CSS, JavaScript, Bootstrap</li>
 
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br><br></br>
-                <br></br>
               <br></br>
+              <br></br>
+              <br></br>
+              <br></br>
+                <br></br>
+                <br></br>
             </div>
           </div>
         </div>
@@ -91,10 +84,13 @@ function Project () {
                 alt="fitnessTrackerPic"
                 image={fitnessTrackerPic}
               />
+               <br></br>
                 <li>  Summary: Personal Fitness Tracker with saved sessions for data graph upon completion</li>
                <li>Tools: HTML, CSS, JavaScript, Bootstrap </li>
               <br></br>
             </div>
+            <br></br> <br></br>
+            <br></br> <br></br> <br></br> <br></br> <br></br>
           </div>
         </div>
       </div>
@@ -244,11 +240,14 @@ function Project () {
                 image={silvermanLLCPic}/>
                 <li> Self Employed</li>
                 <li>Continue to build customer relationships</li>
-                <li>Coder</li>
+                <li>Full Stack Web Developer</li>
                 <li>Restaurant Consultant</li>
+                <li>Teach English as a Second Language</li>
               <br></br><br></br><br></br><br></br>
             </div>
+            
           </div>
+          
         </div>
       </div>
     </div>

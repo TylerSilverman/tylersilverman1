@@ -62,8 +62,8 @@ const Navbar = (props) => {
     <div>
       {" "}
       {state.auth.isAuthenticated ? (
-        <Button to="/dashboard" component={NavLink} className={menuButton}>
-          Dashboard
+        <Button to="/" component={NavLink} className={menuButton}>
+          Home
         </Button>
       ) : (
         " "
@@ -82,9 +82,56 @@ const Navbar = (props) => {
       ) : (
         " "
       )}{" "}
+      {state.auth.isAuthenticated ? (
+        <Button to="/dashboard" component={NavLink} className={menuButton}>
+          Dashboard
+        </Button>
+      ) : (
+        " "
+      )}{" "}
+      {state.auth.isAuthenticated ? (
+        <Button to="/searchBar" component={NavLink} className={menuButton}>
+          SearchBar
+        </Button>
+      ) : (
+        " "
+      )}{" "} 
+      {" "}
+      {state.auth.isAuthenticated ? (
+        <Button to="/notes" component={NavLink} className={menuButton}>
+          Notes
+        </Button>
+      ) : (
+        " "
+      )}{" "}
+      {" "}
+      {state.auth.isAuthenticated ? (
+        <Button to="/tbd" component={NavLink} className={menuButton}>
+          TBD
+        </Button>
+      ) : (
+        " "
+      )}{" "}
+       {/* {" "}
+      {state.auth.isAuthenticated ? (
+        <Button to="/tbd2" component={NavLink} className={menuButton}>
+          TBD2
+        </Button>
+      ) : (
+        " "
+      )}{" "} */}
+       {" "}
       {/* {state.auth.isAuthenticated ? (
-        <Button to="/search" component={NavLink} className={menuButton}>
-          Search
+        <Button to="/tbd" component={NavLink} className={menuButton}>
+          TBD3
+        </Button>
+      ) : (
+        " "
+      )}{" "} */}
+       {" "}
+      {/* {state.auth.isAuthenticated ? (
+        <Button to="/tbd" component={NavLink} className={menuButton}>
+          TBD4
         </Button>
       ) : (
         " "

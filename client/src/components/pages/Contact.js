@@ -19,7 +19,7 @@ const Contact = props => {
 
   const onSubmit = e => {
     e.preventDefault();
-    alert("Sorry for the inconvenience, as I am continually updating my site, please use the email tab on the main page to connect with me. Thank you!")
+    alert("Sorry for the inconvenience, as I am continually updating my site, please use the email tab on the main page to connect with me or please visit silvermanallaround.com Thank you!")
     dispatch(setErrors({ response: { data: {} } }));
 
     const contactData = {
@@ -76,21 +76,31 @@ const Contact = props => {
           <br></br> <br></br>
           <div class="card">
             <a href="mailto:silverman.tyler@gmail.com" className="grey-text text-darken-1" class="card-title center" target="_blank" onClick={() => {
+               alert ("Redirecting to Microsoft Email"),
               console.info("Button Directs to Microsoft Email");
             }}>E-mail</a>
           </div>
           <div class="card">
             <a href="https://www.linkedin.com/in/tylersilverman101/" target="_blank" className="grey-text text-darken-1" class="card-title center" target="_blank" onClick={() => {
+               alert ("Redirecting to Tyler Silverman LinkedIN"),
               console.info("linkedin");
             }}>LinkedIn</a>
           </div>
           <div class="card">
             <a href="https://github.com/TylerSilverman" target="_blank" className="grey-text text-darken-1" class="card-title center" target="_blank" onClick={() => {
+               alert ("Redirecting to Tyler Silverman Github"),
               console.info("github");
             }}>GitHub</a>
           </div>
           <div class="card">
             <a href="https://github.com/TylerSilverman/TylerSilverman.github.io/files/6657776/TylerSilverman-Resume.pdf" target="_blank" className="grey-text text-darken-1" class="card-title center" target="_blank" onClick={() => {
+               alert ("Successfully downloaded my Tech - Resume"),
+              console.info("Techresume");
+            }}>Tech - Resume</a>
+          </div>
+          <div class="card">
+            <a href="https://github.com/TylerSilverman/TylerSilverman.github.io/files/7325176/TylerSilverman-Resume2021.pdf" target="_blank" className="grey-text text-darken-1" class="card-title center" target="_blank" onClick={() => {
+               alert ("Successfully downloaded my resume"),
               console.info("resume");
             }}>Resume</a>
           </div>
