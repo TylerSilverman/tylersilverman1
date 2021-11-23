@@ -35,10 +35,6 @@ const Login = props => {
           <Link to="/" className="btn-flat waves-effect">
             <i className="material-icons left">keyboard_backspace</i> Back to Portfolio
           </Link>
-          <p className="grey-text text-darken-1">
-              {/* Comment Here  */}
-              <Link to="/contact">Click Here to Submit Contact Info</Link>
-          </p>
           <div className="col s12" style={{ paddingLeft: '11.250px' }}>
             <h4>
               <b>Login</b>

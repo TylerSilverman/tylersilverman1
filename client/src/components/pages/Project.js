@@ -11,18 +11,19 @@ import roboArmDYIPic from "../../assets/roboArmDYIPic.PNG";
 import WeatherGuidePic from "../../assets/WeatherGuidePic.PNG";
 import silvermanLLCPic from "../../assets/silvermanLLCPic.PNG";
 import silvermanAllAroundPic from "../../assets/silvermanAllAroundPic.PNG";
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+
 
 
 function Project() {
   return (
     <div class="container">
-      {/* <Link to="/" className="btn-flat waves-effect">
-            <i className="material-icons left">keyboard_backspace</i> Back to Portfolio
-          </Link>   */}
       <div class="col-sm">
           <h4 class="card-title center"><b>My Projects!</b></h4>
       </div>
+      <Link to="/" className="btn-flat waves-effect">
+            <i className="material-icons left">keyboard_backspace</i> Back to Portfolio
+          </Link>
       <br></br>
       <div class="row">
         <div class="col-sm-4">

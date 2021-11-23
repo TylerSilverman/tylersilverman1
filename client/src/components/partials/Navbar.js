@@ -63,21 +63,7 @@ const Navbar = (props) => {
       {" "}
       {state.auth.isAuthenticated ? (
         <Button to="/" component={NavLink} className={menuButton}>
-          Home
-        </Button>
-      ) : (
-        " "
-      )}{" "}
-      {state.auth.isAuthenticated ? (
-        <Button to="/resume" component={NavLink} className={menuButton}>
-          Resume
-        </Button>
-      ) : (
-        " "
-      )}{" "}
-      {state.auth.isAuthenticated ? (
-        <Button to="/project" component={NavLink} className={menuButton}>
-          Project
+          Reset
         </Button>
       ) : (
         " "
@@ -90,20 +76,12 @@ const Navbar = (props) => {
         " "
       )}{" "}
       {state.auth.isAuthenticated ? (
-        <Button to="/searchBar" component={NavLink} className={menuButton}>
+        <Button to="/searchBar" component={NavLink} className={menuButton} >
           SearchBar
         </Button>
       ) : (
         " "
       )}{" "} 
-      {" "}
-      {state.auth.isAuthenticated ? (
-        <Button to="/notes" component={NavLink} className={menuButton}>
-          Notes
-        </Button>
-      ) : (
-        " "
-      )}{" "}
       {" "}
       {state.auth.isAuthenticated ? (
         <Button to="/tbd" component={NavLink} className={menuButton}>

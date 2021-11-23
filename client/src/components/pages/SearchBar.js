@@ -27,20 +27,27 @@ const SearchBar = props => {
             <p className="flow-text grey-text text-darken-1">
                <span style={{ fontFamily: 'monospace' }}>{' '}</span> 
             </p>
-
-            <div class="card">
-            <a href="https://github.com/TylerSilverman/TylerSilverman.github.io/files/6657776/TylerSilverman-Resume.pdf" target="_blank" className="grey-text text-darken-1" class="card-title center" target="_blank" onClick={() => {
-               alert ("Successfully downloaded my resume"),
-              console.info("resume");
-            }}>Tech - Resume</a>
+            </h4>
+            <br></br><br></br><br></br><br></br><br></br><br></br>
+          <div class="card">
+            <a href="https://google.com" target="_blank" className="grey-text text-darken-1" class="card-title center" target="_blank" onClick={() => {
+               alert ("Redirecting to Google"),
+              console.info("google");
+            }}>Google</a>
           </div>
           <div class="card">
-            <a href="https://github.com/TylerSilverman/TylerSilverman.github.io/files/7325176/TylerSilverman-Resume2021.pdf" target="_blank" className="grey-text text-darken-1" class="card-title center" target="_blank" onClick={() => {
-               alert ("Successfully downloaded my resume"),
-              console.info("resume");
-            }}>Resume</a>
+            <a href="https://yahoo.com" target="_blank" className="grey-text text-darken-1" class="card-title center" target="_blank" onClick={() => {
+               alert ("Redirecting to yahoo"),
+              console.info("yahoo");
+            }}>Yahoo</a>
           </div>
-          </h4>
+          <div class="card">
+            <a href="https://cnn.com" target="_blank" className="grey-text text-darken-1" class="card-title center" target="_blank" onClick={() => {
+               alert ("Redirecting to CNN Stocks"),
+              console.info("cnn");
+            }}>CNN Stocks</a>
+          </div>
+          
         </div>
       </div>
     </div>
