@@ -109,7 +109,7 @@ const Landing = props => {
           </p>
           <br />
           <div className="col s6">
-            <Link to="/register" className="btn btn-small waves-effect waves-light hoverable blue accent-3" style={{
+            <Link to="/register" className="btn btn-red waves-effect waves-light hoverable blue accent-3" style={{
               width: '140px',
               borderRadius: '3px',
               letterSpacing: '1.5px',
@@ -118,7 +118,7 @@ const Landing = props => {
             </Link>
           </div>
           <div className="col s6">
-            <Link to="/login" className="btn btn-small waves-effect waves-light hoverable blue accent-3" style={{
+            <Link to="/login" className="btn btn-green waves-effect waves-light hoverable blue accent-3" style={{
               width: '140px',
               borderRadius: '3px',
               letterSpacing: '1.5px',
@@ -158,6 +158,18 @@ const Landing = props => {
                console.info("linkedin");
         }}>LinkedIn</a>
         <br></br>
+        {/* <a href="https://www.silvermanallaround.com" target="_blank" className="grey-text text-darken-1" class="card-title center" target="_blank" onClick={() => {
+               alert ("Now directing you to silvermanallaround"),
+               console.info("silverman all around site");
+        }}>Silverman All Around</a>
+        <br></br>
+        <a href="https://www.silvermanllc.com" target="_blank" className="grey-text text-darken-1" class="card-title center" target="_blank" onClick={() => {
+               alert ("Now directing you to Silverman Site"),
+               console.info("silverman llc site");
+        }}>Silverman LLC</a> */}
+        <br></br> <br></br> 
+        
+        <br></br> <br></br>
         <a href="https://www.silvermanallaround.com" target="_blank" className="grey-text text-darken-1" class="card-title center" target="_blank" onClick={() => {
                alert ("Now directing you to silvermanallaround"),
                console.info("silverman all around site");
@@ -167,11 +179,16 @@ const Landing = props => {
                alert ("Now directing you to Silverman Site"),
                console.info("silverman llc site");
         }}>Silverman LLC</a>
-        <br></br> <br></br> <br></br> <br></br>
-        <a href="" target="_blank" className="grey-text text-darken-1" class="card-title center" target="_blank" onClick={() => {
+
+        {/* <a href="" target="_blank" className="grey-text text-darken-1" class="card-title center" target="_blank" onClick={() => {
                alert ("Concurently unavailable"),
                console.info("tic tac tow");
         }}>Want to play Tic, Tac, Toe?</a>
+        <br></br>
+        <a href="" target="_blank" className="grey-text text-darken-1" class="card-title center" target="_blank" onClick={() => {
+               alert ("Concurently unavailable"),
+               console.info("tic tac tow");
+        }}>Want to play Tic, Tac, Toe?</a> */}
         <br></br>
       </div>
     </div>
