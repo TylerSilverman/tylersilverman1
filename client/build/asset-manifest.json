@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/static/css/main.70f7b0e2.chunk.css",
+    "main.js": "/static/js/main.591b8b87.chunk.js",
+    "main.js.map": "/static/js/main.591b8b87.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.cd378ce9.js",
+    "runtime-main.js.map": "/static/js/runtime-main.cd378ce9.js.map",
+    "static/js/2.c9cfecac.chunk.js": "/static/js/2.c9cfecac.chunk.js",
+    "static/js/2.c9cfecac.chunk.js.map": "/static/js/2.c9cfecac.chunk.js.map",
+    "static/js/3.0828500a.chunk.js": "/static/js/3.0828500a.chunk.js",
+    "static/js/3.0828500a.chunk.js.map": "/static/js/3.0828500a.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.70f7b0e2.chunk.css.map": "/static/css/main.70f7b0e2.chunk.css.map",
+    "static/js/2.c9cfecac.chunk.js.LICENSE.txt": "/static/js/2.c9cfecac.chunk.js.LICENSE.txt",
+    "static/media/BudgetTrackerPic.794f1620.PNG": "/static/media/BudgetTrackerPic.794f1620.PNG",
+    "static/media/NoteTakerPic.af51478f.PNG": "/static/media/NoteTakerPic.af51478f.PNG",
+    "static/media/WeatherGuidePic.9e28414a.PNG": "/static/media/WeatherGuidePic.9e28414a.PNG",
+    "static/media/dayPlannerPic.a3381e88.PNG": "/static/media/dayPlannerPic.a3381e88.PNG",
+    "static/media/fitnessTrackerPic.1f3c8d61.PNG": "/static/media/fitnessTrackerPic.1f3c8d61.PNG",
+    "static/media/nationalParkLocatorPic.52bc7cb6.PNG": "/static/media/nationalParkLocatorPic.52bc7cb6.PNG",
+    "static/media/passwordGeneratorPic.480cf02b.PNG": "/static/media/passwordGeneratorPic.480cf02b.PNG",
+    "static/media/peaceAndMindPic.c7392441.PNG": "/static/media/peaceAndMindPic.c7392441.PNG",
+    "static/media/roboArmDYIPic.136fd842.PNG": "/static/media/roboArmDYIPic.136fd842.PNG",
+    "static/media/silvermanAllAroundPic.cc69904c.PNG": "/static/media/silvermanAllAroundPic.cc69904c.PNG",
+    "static/media/silvermanLLCPic.2b45c3ac.PNG": "/static/media/silvermanLLCPic.2b45c3ac.PNG"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cd378ce9.js",
+    "static/js/2.c9cfecac.chunk.js",
+    "static/css/main.70f7b0e2.chunk.css",
+    "static/js/main.591b8b87.chunk.js"
+  ]
+}
