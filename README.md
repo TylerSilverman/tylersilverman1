@@ -1,8 +1,6 @@
-# Tyler Silverman
+# www.tylersilverman.herokuapp.com
 
-## www.tylersilverman.herokuapp.com
-
-## gitHub: TylerSilverman 
+## Welcome to My Portfolio 
 
 ## www.tylersilverman.github.io
 
